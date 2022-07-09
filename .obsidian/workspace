@@ -1,0 +1,132 @@
+{
+  "main": {
+    "id": "25d55b1d3a79b67f",
+    "type": "split",
+    "children": [
+      {
+        "id": "6b09402d0da4b8be",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Week Summaries/Week 1.md",
+            "mode": "preview",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8894cb8a006479f9",
+    "type": "split",
+    "children": [
+      {
+        "id": "d5b3bf8559e786e5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "052f4862d19f528f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "4909c61d89fea43a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#summary",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f6bde7430f8ca632",
+    "type": "split",
+    "children": [
+      {
+        "id": "8d3001ce2035095c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f8e96f5f41134dfc",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "Week Summaries/Week 1.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.6989606412938244,
+                  "close": true
+                }
+              }
+            }
+          },
+          {
+            "id": "6113ecce461bf424",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Week Summaries/Week 1.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "active": "6b09402d0da4b8be",
+  "lastOpenFiles": [
+    "Week Summaries/Week 1.md",
+    "IPython Notebooks/numerical_solution.ipynb",
+    "Research Objectives.md",
+    "README.md",
+    "Theory/Van der Pol Oscillator.md"
+  ]
+}
