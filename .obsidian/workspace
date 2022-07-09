@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "6b09402d0da4b8be",
+        "id": "85de84098c16a0bd",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Week Summaries/Week 1.md",
+            "file": "Theory/Van der Pol Oscillator.md",
             "mode": "preview",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#summary",
+                "query": "tag:#theory",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Week Summaries/Week 1.md",
+                "file": "Theory/Van der Pol Oscillator.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Week Summaries/Week 1.md",
+                "file": "Theory/Van der Pol Oscillator.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,12 +121,12 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "6b09402d0da4b8be",
+  "active": "85de84098c16a0bd",
   "lastOpenFiles": [
+    "Theory/Van der Pol Oscillator.md",
     "Week Summaries/Week 1.md",
-    "IPython Notebooks/numerical_solution.ipynb",
     "Research Objectives.md",
-    "README.md",
-    "Theory/Van der Pol Oscillator.md"
+    "IPython Notebooks/numerical_solution.ipynb",
+    "README.md"
   ]
 }
