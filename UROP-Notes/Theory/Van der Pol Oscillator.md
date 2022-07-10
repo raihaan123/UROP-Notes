@@ -10,5 +10,10 @@ So its a non-linear 2nd-order ODE - pretty common! In the case where the damping
 
 To form the standard non-linear representation, $X'(t) = f(t,X)$, we can define the state vector $X = [x, x']$:
 
-### $\dot{X}=\left[\begin{array}{c}X[1] \\ \mu\left(1-X[0]^{2}\right) X[1]-X[0]\end{array}\right]$
+### $\dot{X}=\left[\begin{array}{c}X_1 \\ \mu\left(1-X_0^{2}\right) X_1-X_0\end{array}\right]$
 
+This form of the equation is used in the time marching algorithm in the `numerical_solution.ipynb` in the IPython Notebooks directory.
+
+```jupyter
+X_dot = lambda X, mu, t: np.array([X[1], mu*(1-X[0]**2)*X[1]-X[0]])
+```

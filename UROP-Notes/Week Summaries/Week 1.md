@@ -11,7 +11,7 @@
 ## Outline
 Welcome to week 1 of the UROP research project! 
 
-Meeting with Davide on Wednesday 6th of July, we discussed the structure and running of the project, its main deliverables and prospective timelines. Usmaan, my fellow UROP student ~~and my so-called nephew~~, was also present in the meeting. [[Research Objectives]] were mutually agreed on and will be kept up-to-date on the CARG Sharepoint. ^Kickoff
+Meeting with Davide on Wednesday 6th of July, we discussed the structure and running of the project, its main deliverables and prospective timelines. Usmaan, my fellow UROP student ~~and my so-called nephew~~, was also present in the meeting. [[Research Objectives]] were mutually agreed on and will be kept up-to-date here and on the CARG Sharepoint. ^Kickoff
 
 Before even considering Physics Informed Machine Learning, it is important to set a benchmark. A model ODE - the [[Van der Pol Oscillator]] - and numerical solver needed to be selected first. Below are listed several commonly used time-marching algorithms.
 
