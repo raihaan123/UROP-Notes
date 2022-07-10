@@ -12,10 +12,12 @@ To form the standard non-linear representation, $X'(t) = f(t,X)$, we can define 
 
 ### $\dot{X}=\left[\begin{array}{c}X_1 \\ \mu\left(1-X_0^{2}\right) X_1-X_0\end{array}\right]$
 
-This form of the equation is used in the time marching algorithm in the `numerical_solution.ipynb` in the IPython Notebooks directory.
+This form of the equation is used in the time marching algorithm for our baseline numerical solution. Below is a snippet of the function lamda:
 
 ```jupyter
 X_dot = lambda X, mu, t: np.array([X[1], mu*(1-X[0]**2)*X[1]-X[0]])
 ```
+
+The figure below shows the phase portrait for the oscillator at a particular damping coefficient $\mu$. There are also 6 trajectories plotted from different initial conditions, showing a clear limit cycle encircling the unstable equilibrium point ($X_E = [0,0]$)
 
 ![Van der Pol - Phase Portrait](phase-portrait.png)

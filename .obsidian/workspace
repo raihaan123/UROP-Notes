@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "UROP-Notes/Theory/Van der Pol Oscillator.md",
+            "file": "UROP-Notes/Week Summaries/Week 1.md",
             "mode": "preview",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "UROP-Notes/Theory/Van der Pol Oscillator.md",
+                "file": "UROP-Notes/Week Summaries/Week 1.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -92,7 +92,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.7798887840302824,
+                  "scale": 0.7798887840302817,
                   "close": true
                 }
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "UROP-Notes/Theory/Van der Pol Oscillator.md",
+                "file": "UROP-Notes/Week Summaries/Week 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,15 +123,15 @@
   },
   "active": "85de84098c16a0bd",
   "lastOpenFiles": [
-    "UROP-Notes/Theory/Van der Pol Oscillator.md",
     "UROP-Notes/Week Summaries/Week 1.md",
-    "IPython Notebooks/Figures/phase-portrait.png",
+    "UROP-Notes/Theory/Van der Pol Oscillator.md",
     "UROP-Notes/Research Objectives.md",
+    "IPython Notebooks/Figures/phase-portrait.png",
+    "IPython Notebooks/numerical_solution.ipynb",
     "phase.md",
     "UROP-Notes/Kanban Board.md",
     "UROP-Notes/Launchpad.md",
     "README.md",
-    "Week 3.md",
-    "Launchpad.md"
+    "Week 3.md"
   ]
 }
