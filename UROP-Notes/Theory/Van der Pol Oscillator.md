@@ -17,3 +17,5 @@ This form of the equation is used in the time marching algorithm in the `numeric
 ```jupyter
 X_dot = lambda X, mu, t: np.array([X[1], mu*(1-X[0]**2)*X[1]-X[0]])
 ```
+
+![Van der Pol - Phase Portrait](phase-portrait.png)
