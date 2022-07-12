@@ -94,3 +94,6 @@ for i, X0_1 in enumerate([0, 0.5, 1, 1.5, 2, 2.5, 3]):
 
 plt.show()
 ```
+
+## Initial Thoughts on [[PINNs]]
+There are -many- different implementation of [[PINNs]] across literature but they all share the fundamental idea of a data-driven approach to solving differential equations. 

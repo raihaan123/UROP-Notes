@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "UROP-Notes/Week Summaries/Week 1.md",
-            "mode": "preview",
+            "mode": "source",
             "source": false
           }
         }
@@ -124,6 +124,7 @@
   "active": "85de84098c16a0bd",
   "lastOpenFiles": [
     "UROP-Notes/Week Summaries/Week 1.md",
+    "UROP-Notes/Theory/PINNs.md",
     "UROP-Notes/Theory/Van der Pol Oscillator.md",
     "UROP-Notes/Research Objectives.md",
     "IPython Notebooks/Figures/phase-portrait.png",
@@ -131,7 +132,6 @@
     "phase.md",
     "UROP-Notes/Kanban Board.md",
     "UROP-Notes/Launchpad.md",
-    "README.md",
-    "Week 3.md"
+    "README.md"
   ]
 }
