@@ -9,8 +9,20 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "UROP-Notes/Week Summaries/Week 1.md",
+            "file": "UROP-Notes/Week Summaries/Week 3.md",
             "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "f3b1d3f0f772cd93",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "UROP-Notes/Theory/Van der Pol Oscillator.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -53,7 +65,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "f6bde7430f8ca632",
@@ -69,7 +82,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "UROP-Notes/Week Summaries/Week 1.md",
+                "file": "UROP-Notes/Week Summaries/Week 3.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -104,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "UROP-Notes/Week Summaries/Week 1.md",
+                "file": "UROP-Notes/Week Summaries/Week 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,19 +132,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "active": "85de84098c16a0bd",
   "lastOpenFiles": [
-    "UROP-Notes/Week Summaries/Week 1.md",
-    "UROP-Notes/Theory/PINNs.md",
     "UROP-Notes/Theory/Van der Pol Oscillator.md",
+    "UROP-Notes/Week Summaries/Week 3.md",
+    "UROP-Notes/Week Summaries/Week 2.md",
+    "UROP-Notes/Week Summaries/Week 1.md",
     "UROP-Notes/Research Objectives.md",
+    "UROP-Notes/Launchpad.md",
+    "UROP-Notes/Theory/PINNs.md",
     "IPython Notebooks/Figures/phase-portrait.png",
     "IPython Notebooks/numerical_solution.ipynb",
-    "phase.md",
-    "UROP-Notes/Kanban Board.md",
-    "UROP-Notes/Launchpad.md",
-    "README.md"
+    "phase.md"
   ]
 }

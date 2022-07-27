@@ -34,7 +34,7 @@ import numpy as np
 from scipy.integrate import odeint
 
 # Damping coefficient mu
-mu = 1
+mu = 0
 
 # Function for VdP oscillator
 X_dot = lambda X, t: np.array([X[1], mu*(1-X[0]**2)*X[1]-X[0]]) 
