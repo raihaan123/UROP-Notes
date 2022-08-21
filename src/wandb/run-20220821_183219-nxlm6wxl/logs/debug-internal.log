@@ -1,0 +1,149 @@
+2022-08-21 18:32:20,240 INFO    MainThread:6706 [internal.py:wandb_internal():90] W&B internal server running at pid: 6706, started at: 2022-08-21 18:32:20.240309
+2022-08-21 18:32:20,248 INFO    WriterThread:6706 [datastore.py:open_for_write():75] open: /workspaces/UROP-Notes/src/wandb/run-20220821_183219-nxlm6wxl/run-nxlm6wxl.wandb
+2022-08-21 18:32:20,248 DEBUG   SenderThread:6706 [sender.py:send():236] send: header
+2022-08-21 18:32:20,248 DEBUG   SenderThread:6706 [sender.py:send():236] send: run
+2022-08-21 18:32:20,444 DEBUG   HandlerThread:6706 [handler.py:handle_request():140] handle_request: check_version
+2022-08-21 18:32:20,445 INFO    SenderThread:6706 [dir_watcher.py:__init__():216] watching files in: /workspaces/UROP-Notes/src/wandb/run-20220821_183219-nxlm6wxl/files
+2022-08-21 18:32:20,445 INFO    SenderThread:6706 [sender.py:_start_run_threads():815] run started: nxlm6wxl with start time 1661106739
+2022-08-21 18:32:20,445 DEBUG   SenderThread:6706 [sender.py:send():236] send: summary
+2022-08-21 18:32:20,445 INFO    SenderThread:6706 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-08-21 18:32:20,446 DEBUG   SenderThread:6706 [sender.py:send_request():250] send_request: check_version
+2022-08-21 18:32:20,486 DEBUG   HandlerThread:6706 [handler.py:handle_request():140] handle_request: run_start
+2022-08-21 18:32:20,487 DEBUG   HandlerThread:6706 [meta.py:__init__():35] meta init
+2022-08-21 18:32:20,487 DEBUG   HandlerThread:6706 [meta.py:__init__():49] meta init done
+2022-08-21 18:32:20,487 DEBUG   HandlerThread:6706 [meta.py:probe():209] probe
+2022-08-21 18:32:20,489 DEBUG   HandlerThread:6706 [meta.py:_setup_git():199] setup git
+2022-08-21 18:32:20,507 DEBUG   HandlerThread:6706 [meta.py:_setup_git():206] setup git done
+2022-08-21 18:32:20,507 DEBUG   HandlerThread:6706 [meta.py:_save_pip():53] save pip
+2022-08-21 18:32:20,508 DEBUG   HandlerThread:6706 [meta.py:_save_pip():67] save pip done
+2022-08-21 18:32:20,508 DEBUG   HandlerThread:6706 [meta.py:probe():247] probe done
+2022-08-21 18:32:20,541 DEBUG   SenderThread:6706 [sender.py:send():236] send: files
+2022-08-21 18:32:20,541 INFO    SenderThread:6706 [sender.py:_save_file():952] saving file wandb-metadata.json with policy now
+2022-08-21 18:32:20,554 DEBUG   HandlerThread:6706 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-21 18:32:20,556 DEBUG   SenderThread:6706 [sender.py:send_request():250] send_request: stop_status
+2022-08-21 18:32:20,687 DEBUG   SenderThread:6706 [sender.py:send():236] send: telemetry
+2022-08-21 18:32:21,042 INFO    Thread-11 :6706 [upload_job.py:push():138] Uploaded file /tmp/tmp832wiu4fwandb/1hwecy0s-wandb-metadata.json
+2022-08-21 18:32:21,447 INFO    Thread-7  :6706 [dir_watcher.py:_on_file_created():269] file/dir created: /workspaces/UROP-Notes/src/wandb/run-20220821_183219-nxlm6wxl/files/wandb-summary.json
+2022-08-21 18:32:21,447 INFO    Thread-7  :6706 [dir_watcher.py:_on_file_created():269] file/dir created: /workspaces/UROP-Notes/src/wandb/run-20220821_183219-nxlm6wxl/files/output.log
+2022-08-21 18:32:21,448 INFO    Thread-7  :6706 [dir_watcher.py:_on_file_created():269] file/dir created: /workspaces/UROP-Notes/src/wandb/run-20220821_183219-nxlm6wxl/files/requirements.txt
+2022-08-21 18:32:21,448 INFO    Thread-7  :6706 [dir_watcher.py:_on_file_created():269] file/dir created: /workspaces/UROP-Notes/src/wandb/run-20220821_183219-nxlm6wxl/files/wandb-metadata.json
+2022-08-21 18:32:23,446 INFO    Thread-7  :6706 [dir_watcher.py:_on_file_modified():286] file/dir modified: /workspaces/UROP-Notes/src/wandb/run-20220821_183219-nxlm6wxl/files/output.log
+2022-08-21 18:32:24,667 DEBUG   HandlerThread:6706 [handler.py:handle_request():140] handle_request: partial_history
+2022-08-21 18:32:24,669 DEBUG   SenderThread:6706 [sender.py:send():236] send: history
+2022-08-21 18:32:24,669 DEBUG   SenderThread:6706 [sender.py:send():236] send: summary
+2022-08-21 18:32:24,670 INFO    SenderThread:6706 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-08-21 18:32:24,670 DEBUG   SenderThread:6706 [sender.py:send():236] send: telemetry
+2022-08-21 18:32:24,670 DEBUG   SenderThread:6706 [sender.py:send():236] send: telemetry
+2022-08-21 18:32:25,125 DEBUG   SenderThread:6706 [sender.py:send():236] send: exit
+2022-08-21 18:32:25,126 INFO    SenderThread:6706 [sender.py:send_exit():372] handling exit code: 0
+2022-08-21 18:32:25,126 INFO    SenderThread:6706 [sender.py:send_exit():374] handling runtime: 4
+2022-08-21 18:32:25,127 INFO    SenderThread:6706 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-08-21 18:32:25,127 INFO    SenderThread:6706 [sender.py:send_exit():380] send defer
+2022-08-21 18:32:25,128 DEBUG   HandlerThread:6706 [handler.py:handle_request():140] handle_request: poll_exit
+2022-08-21 18:32:25,128 DEBUG   HandlerThread:6706 [handler.py:handle_request():140] handle_request: defer
+2022-08-21 18:32:25,128 DEBUG   SenderThread:6706 [sender.py:send_request():250] send_request: poll_exit
+2022-08-21 18:32:25,129 INFO    HandlerThread:6706 [handler.py:handle_request_defer():163] handle defer: 0
+2022-08-21 18:32:25,129 DEBUG   SenderThread:6706 [sender.py:send_request():250] send_request: defer
+2022-08-21 18:32:25,129 INFO    SenderThread:6706 [sender.py:send_request_defer():389] handle sender defer: 0
+2022-08-21 18:32:25,130 INFO    SenderThread:6706 [sender.py:transition_state():393] send defer: 1
+2022-08-21 18:32:25,130 DEBUG   HandlerThread:6706 [handler.py:handle_request():140] handle_request: defer
+2022-08-21 18:32:25,130 INFO    HandlerThread:6706 [handler.py:handle_request_defer():163] handle defer: 1
+2022-08-21 18:32:25,211 DEBUG   SenderThread:6706 [sender.py:send_request():250] send_request: defer
+2022-08-21 18:32:25,211 INFO    SenderThread:6706 [sender.py:send_request_defer():389] handle sender defer: 1
+2022-08-21 18:32:25,211 INFO    SenderThread:6706 [sender.py:transition_state():393] send defer: 2
+2022-08-21 18:32:25,211 DEBUG   SenderThread:6706 [sender.py:send():236] send: stats
+2022-08-21 18:32:25,212 DEBUG   HandlerThread:6706 [handler.py:handle_request():140] handle_request: defer
+2022-08-21 18:32:25,212 INFO    HandlerThread:6706 [handler.py:handle_request_defer():163] handle defer: 2
+2022-08-21 18:32:25,212 DEBUG   SenderThread:6706 [sender.py:send_request():250] send_request: defer
+2022-08-21 18:32:25,212 INFO    SenderThread:6706 [sender.py:send_request_defer():389] handle sender defer: 2
+2022-08-21 18:32:25,212 INFO    SenderThread:6706 [sender.py:transition_state():393] send defer: 3
+2022-08-21 18:32:25,213 DEBUG   HandlerThread:6706 [handler.py:handle_request():140] handle_request: defer
+2022-08-21 18:32:25,213 INFO    HandlerThread:6706 [handler.py:handle_request_defer():163] handle defer: 3
+2022-08-21 18:32:25,213 DEBUG   SenderThread:6706 [sender.py:send_request():250] send_request: defer
+2022-08-21 18:32:25,213 INFO    SenderThread:6706 [sender.py:send_request_defer():389] handle sender defer: 3
+2022-08-21 18:32:25,213 INFO    SenderThread:6706 [sender.py:transition_state():393] send defer: 4
+2022-08-21 18:32:25,213 DEBUG   HandlerThread:6706 [handler.py:handle_request():140] handle_request: defer
+2022-08-21 18:32:25,214 INFO    HandlerThread:6706 [handler.py:handle_request_defer():163] handle defer: 4
+2022-08-21 18:32:25,214 DEBUG   SenderThread:6706 [sender.py:send():236] send: summary
+2022-08-21 18:32:25,214 INFO    SenderThread:6706 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-08-21 18:32:25,214 DEBUG   SenderThread:6706 [sender.py:send_request():250] send_request: defer
+2022-08-21 18:32:25,215 INFO    SenderThread:6706 [sender.py:send_request_defer():389] handle sender defer: 4
+2022-08-21 18:32:25,215 INFO    SenderThread:6706 [sender.py:transition_state():393] send defer: 5
+2022-08-21 18:32:25,215 DEBUG   HandlerThread:6706 [handler.py:handle_request():140] handle_request: defer
+2022-08-21 18:32:25,215 INFO    HandlerThread:6706 [handler.py:handle_request_defer():163] handle defer: 5
+2022-08-21 18:32:25,215 DEBUG   SenderThread:6706 [sender.py:send_request():250] send_request: defer
+2022-08-21 18:32:25,215 INFO    SenderThread:6706 [sender.py:send_request_defer():389] handle sender defer: 5
+2022-08-21 18:32:25,230 DEBUG   HandlerThread:6706 [handler.py:handle_request():140] handle_request: poll_exit
+2022-08-21 18:32:25,362 INFO    SenderThread:6706 [sender.py:transition_state():393] send defer: 6
+2022-08-21 18:32:25,362 DEBUG   SenderThread:6706 [sender.py:send_request():250] send_request: poll_exit
+2022-08-21 18:32:25,363 DEBUG   HandlerThread:6706 [handler.py:handle_request():140] handle_request: defer
+2022-08-21 18:32:25,363 INFO    HandlerThread:6706 [handler.py:handle_request_defer():163] handle defer: 6
+2022-08-21 18:32:25,363 DEBUG   SenderThread:6706 [sender.py:send_request():250] send_request: defer
+2022-08-21 18:32:25,364 INFO    SenderThread:6706 [sender.py:send_request_defer():389] handle sender defer: 6
+2022-08-21 18:32:25,364 INFO    SenderThread:6706 [dir_watcher.py:finish():353] shutting down directory watcher
+2022-08-21 18:32:25,447 INFO    Thread-7  :6706 [dir_watcher.py:_on_file_modified():286] file/dir modified: /workspaces/UROP-Notes/src/wandb/run-20220821_183219-nxlm6wxl/files/wandb-summary.json
+2022-08-21 18:32:25,448 INFO    SenderThread:6706 [dir_watcher.py:_on_file_modified():286] file/dir modified: /workspaces/UROP-Notes/src/wandb/run-20220821_183219-nxlm6wxl/files/config.yaml
+2022-08-21 18:32:25,448 INFO    SenderThread:6706 [dir_watcher.py:_on_file_modified():286] file/dir modified: /workspaces/UROP-Notes/src/wandb/run-20220821_183219-nxlm6wxl/files/output.log
+2022-08-21 18:32:25,448 INFO    SenderThread:6706 [dir_watcher.py:finish():383] scan: /workspaces/UROP-Notes/src/wandb/run-20220821_183219-nxlm6wxl/files
+2022-08-21 18:32:25,448 INFO    SenderThread:6706 [dir_watcher.py:finish():397] scan save: /workspaces/UROP-Notes/src/wandb/run-20220821_183219-nxlm6wxl/files/output.log output.log
+2022-08-21 18:32:25,448 INFO    SenderThread:6706 [dir_watcher.py:finish():397] scan save: /workspaces/UROP-Notes/src/wandb/run-20220821_183219-nxlm6wxl/files/wandb-metadata.json wandb-metadata.json
+2022-08-21 18:32:25,449 INFO    SenderThread:6706 [dir_watcher.py:finish():397] scan save: /workspaces/UROP-Notes/src/wandb/run-20220821_183219-nxlm6wxl/files/requirements.txt requirements.txt
+2022-08-21 18:32:25,452 INFO    SenderThread:6706 [dir_watcher.py:finish():397] scan save: /workspaces/UROP-Notes/src/wandb/run-20220821_183219-nxlm6wxl/files/config.yaml config.yaml
+2022-08-21 18:32:25,453 INFO    SenderThread:6706 [dir_watcher.py:finish():397] scan save: /workspaces/UROP-Notes/src/wandb/run-20220821_183219-nxlm6wxl/files/wandb-summary.json wandb-summary.json
+2022-08-21 18:32:25,453 INFO    SenderThread:6706 [sender.py:transition_state():393] send defer: 7
+2022-08-21 18:32:25,460 DEBUG   HandlerThread:6706 [handler.py:handle_request():140] handle_request: defer
+2022-08-21 18:32:25,463 INFO    HandlerThread:6706 [handler.py:handle_request_defer():163] handle defer: 7
+2022-08-21 18:32:25,463 DEBUG   SenderThread:6706 [sender.py:send_request():250] send_request: defer
+2022-08-21 18:32:25,463 INFO    SenderThread:6706 [sender.py:send_request_defer():389] handle sender defer: 7
+2022-08-21 18:32:25,464 INFO    SenderThread:6706 [file_pusher.py:finish():171] shutting down file pusher
+2022-08-21 18:32:25,464 DEBUG   HandlerThread:6706 [handler.py:handle_request():140] handle_request: poll_exit
+2022-08-21 18:32:25,465 DEBUG   SenderThread:6706 [sender.py:send_request():250] send_request: poll_exit
+2022-08-21 18:32:25,567 DEBUG   HandlerThread:6706 [handler.py:handle_request():140] handle_request: poll_exit
+2022-08-21 18:32:25,567 DEBUG   SenderThread:6706 [sender.py:send_request():250] send_request: poll_exit
+2022-08-21 18:32:25,669 DEBUG   HandlerThread:6706 [handler.py:handle_request():140] handle_request: poll_exit
+2022-08-21 18:32:25,669 DEBUG   SenderThread:6706 [sender.py:send_request():250] send_request: poll_exit
+2022-08-21 18:32:25,771 DEBUG   HandlerThread:6706 [handler.py:handle_request():140] handle_request: poll_exit
+2022-08-21 18:32:25,771 DEBUG   SenderThread:6706 [sender.py:send_request():250] send_request: poll_exit
+2022-08-21 18:32:25,873 DEBUG   HandlerThread:6706 [handler.py:handle_request():140] handle_request: poll_exit
+2022-08-21 18:32:25,873 DEBUG   SenderThread:6706 [sender.py:send_request():250] send_request: poll_exit
+2022-08-21 18:32:25,946 INFO    Thread-15 :6706 [upload_job.py:push():138] Uploaded file /workspaces/UROP-Notes/src/wandb/run-20220821_183219-nxlm6wxl/files/wandb-summary.json
+2022-08-21 18:32:25,958 INFO    Thread-12 :6706 [upload_job.py:push():138] Uploaded file /workspaces/UROP-Notes/src/wandb/run-20220821_183219-nxlm6wxl/files/output.log
+2022-08-21 18:32:25,975 DEBUG   HandlerThread:6706 [handler.py:handle_request():140] handle_request: poll_exit
+2022-08-21 18:32:25,975 DEBUG   SenderThread:6706 [sender.py:send_request():250] send_request: poll_exit
+2022-08-21 18:32:25,994 INFO    Thread-13 :6706 [upload_job.py:push():138] Uploaded file /workspaces/UROP-Notes/src/wandb/run-20220821_183219-nxlm6wxl/files/requirements.txt
+2022-08-21 18:32:26,039 INFO    Thread-14 :6706 [upload_job.py:push():138] Uploaded file /workspaces/UROP-Notes/src/wandb/run-20220821_183219-nxlm6wxl/files/config.yaml
+2022-08-21 18:32:26,077 DEBUG   HandlerThread:6706 [handler.py:handle_request():140] handle_request: poll_exit
+2022-08-21 18:32:26,077 DEBUG   SenderThread:6706 [sender.py:send_request():250] send_request: poll_exit
+2022-08-21 18:32:26,179 DEBUG   HandlerThread:6706 [handler.py:handle_request():140] handle_request: poll_exit
+2022-08-21 18:32:26,179 DEBUG   SenderThread:6706 [sender.py:send_request():250] send_request: poll_exit
+2022-08-21 18:32:26,239 INFO    Thread-6 (_thread_body):6706 [sender.py:transition_state():393] send defer: 8
+2022-08-21 18:32:26,240 DEBUG   HandlerThread:6706 [handler.py:handle_request():140] handle_request: defer
+2022-08-21 18:32:26,240 INFO    HandlerThread:6706 [handler.py:handle_request_defer():163] handle defer: 8
+2022-08-21 18:32:26,240 DEBUG   SenderThread:6706 [sender.py:send_request():250] send_request: defer
+2022-08-21 18:32:26,240 INFO    SenderThread:6706 [sender.py:send_request_defer():389] handle sender defer: 8
+2022-08-21 18:32:26,281 DEBUG   HandlerThread:6706 [handler.py:handle_request():140] handle_request: poll_exit
+2022-08-21 18:32:26,634 INFO    SenderThread:6706 [sender.py:transition_state():393] send defer: 9
+2022-08-21 18:32:26,634 DEBUG   SenderThread:6706 [sender.py:send_request():250] send_request: poll_exit
+2022-08-21 18:32:26,635 DEBUG   HandlerThread:6706 [handler.py:handle_request():140] handle_request: defer
+2022-08-21 18:32:26,635 INFO    HandlerThread:6706 [handler.py:handle_request_defer():163] handle defer: 9
+2022-08-21 18:32:26,635 DEBUG   SenderThread:6706 [sender.py:send_request():250] send_request: defer
+2022-08-21 18:32:26,635 INFO    SenderThread:6706 [sender.py:send_request_defer():389] handle sender defer: 9
+2022-08-21 18:32:26,635 INFO    SenderThread:6706 [sender.py:transition_state():393] send defer: 10
+2022-08-21 18:32:26,636 DEBUG   HandlerThread:6706 [handler.py:handle_request():140] handle_request: defer
+2022-08-21 18:32:26,636 DEBUG   SenderThread:6706 [sender.py:send():236] send: final
+2022-08-21 18:32:26,636 INFO    HandlerThread:6706 [handler.py:handle_request_defer():163] handle defer: 10
+2022-08-21 18:32:26,636 DEBUG   SenderThread:6706 [sender.py:send():236] send: footer
+2022-08-21 18:32:26,637 DEBUG   SenderThread:6706 [sender.py:send_request():250] send_request: defer
+2022-08-21 18:32:26,637 INFO    SenderThread:6706 [sender.py:send_request_defer():389] handle sender defer: 10
+2022-08-21 18:32:26,736 DEBUG   HandlerThread:6706 [handler.py:handle_request():140] handle_request: poll_exit
+2022-08-21 18:32:26,737 DEBUG   SenderThread:6706 [sender.py:send_request():250] send_request: poll_exit
+2022-08-21 18:32:26,737 INFO    SenderThread:6706 [file_pusher.py:join():176] waiting for file pusher
+2022-08-21 18:32:27,091 DEBUG   HandlerThread:6706 [handler.py:handle_request():140] handle_request: sampled_history
+2022-08-21 18:32:27,092 DEBUG   HandlerThread:6706 [handler.py:handle_request():140] handle_request: get_summary
+2022-08-21 18:32:27,093 DEBUG   HandlerThread:6706 [handler.py:handle_request():140] handle_request: shutdown
+2022-08-21 18:32:27,093 INFO    HandlerThread:6706 [handler.py:finish():806] shutting down handler
+2022-08-21 18:32:27,637 INFO    WriterThread:6706 [datastore.py:close():279] close: /workspaces/UROP-Notes/src/wandb/run-20220821_183219-nxlm6wxl/run-nxlm6wxl.wandb
+2022-08-21 18:32:27,989 INFO    SenderThread:6706 [sender.py:finish():1114] shutting down sender
+2022-08-21 18:32:27,989 INFO    SenderThread:6706 [file_pusher.py:finish():171] shutting down file pusher
+2022-08-21 18:32:27,990 INFO    SenderThread:6706 [file_pusher.py:join():176] waiting for file pusher
+2022-08-21 18:32:27,992 INFO    MainThread:6706 [internal.py:handle_exit():80] Internal process exited

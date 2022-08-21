@@ -1,0 +1,27 @@
+Compiling model...
+Building feed-forward neural network...
+'build' took 0.244390 s
+'compile' took 1.368939 s
+Initializing variables...
+Training model...
+Step      Train loss                        Test loss                         Test metric
+0         [7.68e-01, 1.82e+00, 1.08e-04]    [6.98e-01, 1.82e+00, 1.08e-04]    []
+/opt/python/3.10.4/lib/python3.10/site-packages/skopt/sampler/sobol.py:246: UserWarning: The balance properties of Sobol' points require n to be a power of 2. 0 points have been previously generated, then: n=0+102=102.
+  warnings.warn("The balance properties of Sobol' points require "
+/opt/python/3.10.4/lib/python3.10/site-packages/deepxde/nn/tensorflow_compat_v1/fnn.py:103: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  return tf.layers.dense(
+2022-08-21 18:24:04.341899: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-08-21 18:24:05.484799: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:354] MLIR V1 optimization pass is not enabled
+INFO:tensorflow:Optimization terminated with:
+  Message: CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH
+  Objective function value: 0.039721
+  Number of iterations: 271
+  Number of functions evaluations: 416
+416       [3.86e-02, 1.10e-03, 3.06e-06]    [4.29e-02, 1.10e-03, 3.06e-06]    []
+Best model at step 416:
+  train loss: 3.97e-02
+  test loss: 4.40e-02
+  test metric: []
+'train' took 2.136008 s
+0.044001933

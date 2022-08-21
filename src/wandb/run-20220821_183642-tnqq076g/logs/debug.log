@@ -1,0 +1,232 @@
+2022-08-21 18:36:42,864 INFO    Thread-410 (_run_job):2172 [wandb_setup.py:_flush():76] Configure stats pid to 2172
+2022-08-21 18:36:42,864 INFO    Thread-410 (_run_job):2172 [wandb_setup.py:_flush():76] Loading settings from /home/codespace/.config/wandb/settings
+2022-08-21 18:36:42,864 INFO    Thread-410 (_run_job):2172 [wandb_setup.py:_flush():76] Loading settings from wandb/settings
+2022-08-21 18:36:42,864 INFO    Thread-410 (_run_job):2172 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'entity': 'raihaan123', 'project': 'PINNs', 'root_dir': '/workspaces/UROP-Notes/src', 'run_id': 'tnqq076g', 'sweep_param_path': '/workspaces/UROP-Notes/src/wandb/sweep-h5zmp3h3/config-tnqq076g.yaml', 'sweep_id': 'h5zmp3h3'}
+2022-08-21 18:36:42,864 INFO    Thread-410 (_run_job):2172 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2022-08-21 18:36:42,864 INFO    Thread-410 (_run_job):2172 [wandb_init.py:_log_setup():461] Logging user logs to /workspaces/UROP-Notes/src/wandb/run-20220821_183642-tnqq076g/logs/debug.log
+2022-08-21 18:36:42,864 INFO    Thread-410 (_run_job):2172 [wandb_init.py:_log_setup():462] Logging internal logs to /workspaces/UROP-Notes/src/wandb/run-20220821_183642-tnqq076g/logs/debug-internal.log
+2022-08-21 18:36:42,865 INFO    Thread-410 (_run_job):2172 [wandb_init.py:_jupyter_setup():411] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7faa8dc635b0>
+2022-08-21 18:36:42,865 INFO    Thread-410 (_run_job):2172 [wandb_init.py:init():495] calling init triggers
+2022-08-21 18:36:42,865 INFO    Thread-410 (_run_job):2172 [wandb_init.py:init():498] wandb.init called with sweep_config: {'depth': 1, 'height': 5, 'num_domain': 100}
+config: {}
+2022-08-21 18:36:42,865 INFO    Thread-410 (_run_job):2172 [wandb_init.py:init():548] starting backend
+2022-08-21 18:36:42,865 INFO    Thread-410 (_run_job):2172 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-08-21 18:36:42,870 INFO    Thread-410 (_run_job):2172 [backend.py:ensure_launched():217] starting backend process...
+2022-08-21 18:36:42,871 INFO    Thread-410 (_run_job):2172 [backend.py:ensure_launched():222] started backend process with pid: 9157
+2022-08-21 18:36:42,872 INFO    Thread-410 (_run_job):2172 [wandb_init.py:init():558] backend started and connected
+2022-08-21 18:36:42,876 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_config_callback():1131] config_cb None None {'depth': 1, 'height': 5, 'num_domain': 100}
+2022-08-21 18:36:42,877 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_label_probe_notebook():1084] probe notebook
+2022-08-21 18:36:42,877 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_label_probe_notebook():1094] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2022-08-21 18:36:42,877 INFO    Thread-410 (_run_job):2172 [wandb_init.py:init():634] updated telemetry
+2022-08-21 18:36:42,883 INFO    Thread-410 (_run_job):2172 [wandb_init.py:init():665] communicating run to backend with 30 second timeout
+2022-08-21 18:36:43,972 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_on_init():1919] communicating current version
+2022-08-21 18:36:44,021 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_on_init():1923] got version response upgrade_message: "wandb version 0.13.1 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2022-08-21 18:36:44,021 INFO    Thread-410 (_run_job):2172 [wandb_init.py:init():700] starting run threads in backend
+2022-08-21 18:36:44,087 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_console_start():1893] atexit reg
+2022-08-21 18:36:44,087 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_redirect():1766] redirect: SettingsConsole.WRAP
+2022-08-21 18:36:44,087 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_redirect():1803] Wrapping output streams.
+2022-08-21 18:36:44,096 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_redirect():1827] Redirects installed.
+2022-08-21 18:36:44,096 INFO    Thread-410 (_run_job):2172 [wandb_init.py:init():732] run started, returning control to user process
+2022-08-21 18:36:45,360 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_finish():1680] finishing run raihaan123/PINNs/tnqq076g
+2022-08-21 18:36:45,361 INFO    Thread-410 (_run_job):2172 [jupyter.py:save_history():435] not saving jupyter history
+2022-08-21 18:36:45,361 INFO    Thread-410 (_run_job):2172 [jupyter.py:save_ipynb():377] not saving jupyter notebook
+2022-08-21 18:36:45,361 INFO    Thread-410 (_run_job):2172 [wandb_init.py:_jupyter_teardown():393] cleaning up jupyter logic
+2022-08-21 18:36:45,361 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_atexit_cleanup():1862] got exitcode: 0
+2022-08-21 18:36:45,363 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_restore():1834] restore
+2022-08-21 18:36:45,610 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  total_bytes: 639
+}
+
+2022-08-21 18:36:45,792 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  total_bytes: 639
+}
+
+2022-08-21 18:36:45,990 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  total_bytes: 4948
+}
+
+2022-08-21 18:36:46,092 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  total_bytes: 4948
+}
+
+2022-08-21 18:36:46,194 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 4309
+  total_bytes: 4948
+}
+
+2022-08-21 18:36:46,296 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 4309
+  total_bytes: 4948
+}
+
+2022-08-21 18:36:46,398 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 4309
+  total_bytes: 4948
+}
+
+2022-08-21 18:36:46,500 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 4309
+  total_bytes: 4948
+}
+
+2022-08-21 18:36:46,602 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 4309
+  total_bytes: 4948
+}
+
+2022-08-21 18:36:46,704 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 4309
+  total_bytes: 4948
+}
+
+2022-08-21 18:36:46,807 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 4309
+  total_bytes: 4948
+}
+
+2022-08-21 18:36:46,909 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 4309
+  total_bytes: 4948
+}
+
+2022-08-21 18:36:47,011 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 4309
+  total_bytes: 4948
+}
+
+2022-08-21 18:36:47,113 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 4309
+  total_bytes: 4948
+}
+
+2022-08-21 18:36:47,215 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 4309
+  total_bytes: 4948
+}
+
+2022-08-21 18:36:47,317 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 4309
+  total_bytes: 4948
+}
+
+2022-08-21 18:36:47,419 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 4309
+  total_bytes: 4948
+}
+
+2022-08-21 18:36:47,521 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 4948
+  total_bytes: 4948
+}
+
+2022-08-21 18:36:47,624 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 4948
+  total_bytes: 4948
+}
+
+2022-08-21 18:36:47,726 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 4948
+  total_bytes: 4948
+}
+
+2022-08-21 18:36:47,827 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 4948
+  total_bytes: 4948
+}
+
+2022-08-21 18:36:47,929 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 4948
+  total_bytes: 4948
+}
+
+2022-08-21 18:36:48,155 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 4948
+  total_bytes: 4948
+}
+
+2022-08-21 18:36:48,512 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_on_finish():1991] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 4948
+  total_bytes: 4948
+}
+local_info {
+}
+
+2022-08-21 18:36:49,671 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_footer_history_summary_info():3099] rendering history
+2022-08-21 18:36:49,672 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_footer_history_summary_info():3131] rendering summary
+2022-08-21 18:36:49,676 INFO    Thread-410 (_run_job):2172 [wandb_run.py:_footer_sync_info():3055] logging synced files
