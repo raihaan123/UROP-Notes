@@ -1,0 +1,26 @@
+Compiling model...
+Building feed-forward neural network...
+'build' took 0.112409 s
+'compile' took 0.686170 s
+Initializing variables...
+Training model...
+Step      Train loss                        Test loss                         Test metric
+0         [8.85e-02, 4.91e-01, 4.29e-04]    [8.84e-02, 4.91e-01, 4.29e-04]    []
+/opt/python/3.10.4/lib/python3.10/site-packages/skopt/sampler/sobol.py:246: UserWarning: The balance properties of Sobol' points require n to be a power of 2. 0 points have been previously generated, then: n=0+1002=1002.
+  warnings.warn("The balance properties of Sobol' points require "
+/opt/python/3.10.4/lib/python3.10/site-packages/deepxde/nn/tensorflow_compat_v1/fnn.py:103: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  return tf.layers.dense(
+1000      [2.46e-02, 1.57e-05, 1.72e-04]
+2000      [2.02e-04, 4.98e-09, 2.42e-08]
+3000      [2.13e-05, 2.68e-08, 8.70e-08]
+INFO:tensorflow:Optimization terminated with:
+  Message: CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH
+  Objective function value: 0.000005
+  Number of iterations: 3268
+  Number of functions evaluations: 3727
+3727      [4.83e-06, 5.68e-14, 1.51e-11]    [4.77e-06, 5.68e-14, 1.51e-11]    []
+Best model at step 3727:
+  train loss: 4.83e-06
+  test loss: 4.77e-06
+  test metric: []
+'train' took 141.344290 s

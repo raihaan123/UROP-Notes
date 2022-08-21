@@ -1,0 +1,162 @@
+diff --git a/src/deepxde.ipynb b/src/deepxde.ipynb
+index 2aed139..75ca20a 100644
+--- a/src/deepxde.ipynb
++++ b/src/deepxde.ipynb
+@@ -26,8 +26,8 @@
+      "text": [
+       "Using backend: tensorflow.compat.v1\n",
+       "\n",
+-      "2022-08-21 18:23:35.944589: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory\n",
+-      "2022-08-21 18:23:35.944624: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.\n"
++      "2022-08-21 20:26:51.990434: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory\n",
++      "2022-08-21 20:26:51.990467: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.\n"
+      ]
+     },
+     {
+@@ -43,9 +43,9 @@
+      "name": "stderr",
+      "output_type": "stream",
+      "text": [
+-      "2022-08-21 18:23:52.204913: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory\n",
+-      "2022-08-21 18:23:52.231069: W tensorflow/stream_executor/cuda/cuda_driver.cc:269] failed call to cuInit: UNKNOWN ERROR (303)\n",
+-      "2022-08-21 18:23:52.231128: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (codespaces-baf76a): /proc/driver/nvidia/version does not exist\n"
++      "2022-08-21 20:27:07.761289: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory\n",
++      "2022-08-21 20:27:07.761333: W tensorflow/stream_executor/cuda/cuda_driver.cc:269] failed call to cuInit: UNKNOWN ERROR (303)\n",
++      "2022-08-21 20:27:07.761360: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (codespaces-baf76a): /proc/driver/nvidia/version does not exist\n"
+      ]
+     },
+     {
+@@ -59,35 +59,35 @@
+    ],
+    "source": [
+     "# surpress warnings from imports\n",
+-    "import warnings\n",
++    "# import warnings\n",
+     "# warnings.filterwarnings(\"ignore\")\n",
+     "\n",
+-    "import deepxde as dde\n",
+-    "from deepxde.backend import tf\n",
+-    "import numpy as np\n",
+-    "import matplotlib.pyplot as plt\n",
+-    "from scipy.integrate import odeint\n",
+-    "import wandb"
++    "import  deepxde as dde\n",
++    "from    deepxde.backend import tf\n",
++    "import  numpy as np\n",
++    "import  matplotlib.pyplot as plt\n",
++    "from    scipy.integrate import odeint\n",
++    "import  wandb"
++   ]
++  },
++  {
++   "cell_type": "markdown",
++   "metadata": {},
++   "source": [
++    "Weights and Biases is an ML-ops framework that runs experiments on the training of deep neural networks, enabling insights into the effect of hyperparameters on the performance of a model."
+    ]
+   },
+   {
+    "cell_type": "code",
+-   "execution_count": 2,
++   "execution_count": 5,
+    "metadata": {},
+    "outputs": [
+-    {
+-     "name": "stderr",
+-     "output_type": "stream",
+-     "text": [
+-      "Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.\n"
+-     ]
+-    },
+     {
+      "name": "stdout",
+      "output_type": "stream",
+      "text": [
+-      "Create sweep with ID: h5zmp3h3\n",
+-      "Sweep URL: https://wandb.ai/raihaan123/PINNs/sweeps/h5zmp3h3\n"
++      "Create sweep with ID: 49kaiz3x\n",
++      "Sweep URL: https://wandb.ai/raihaan123/PINNs/sweeps/49kaiz3x\n"
+      ]
+     }
+    ],
+@@ -99,17 +99,11 @@
+     "  \"method\": \"bayes\",\n",
+     "  \"metric\": {\"name\": \"val_loss\", \"goal\": \"minimize\"},\n",
+     "  \n",
+-    "  # \"method\" : \"random\",\n",
+-    "  \n",
+     "  \"parameters\" : {\n",
+     "    \n",
+-    "    \"depth\"       : {\"values\" : range(1, 11)},\n",
+-    "    \"height\"      : {\"values\" : range(5, 55, 5)},\n",
+-    "    \"num_domain\"  : {\"values\" : range(1000, 5000, 1000)}\n",
+-    "    # \"weight1\" : {\"min\" : 0, \"max\" : 3},\n",
+-    "    # \"weight2\" : {\"min\" : 0, \"max\" : 3},\n",
+-    "    # \"weight3\" : {\"min\" : 0, \"max\" : 3}\n",
+-    "    \n",
++    "    \"depth\"       : {\"values\" : np.arange(1, 11).tolist()},\n",
++    "    \"height\"      : {\"values\" : np.arange(50, 100, 5).tolist()},\n",
++    "    \"num_domain\"  : {\"values\" : np.arange(1000, 3000, 500).tolist()}    \n",
+     "  }\n",
+     "}\n",
+     "\n",
+@@ -130,9 +124,21 @@
+   },
+   {
+    "cell_type": "code",
+-   "execution_count": null,
++   "execution_count": 6,
+    "metadata": {},
+-   "outputs": [],
++   "outputs": [
++    {
++     "name": "stderr",
++     "output_type": "stream",
++     "text": [
++      "\u001b[34m\u001b[1mwandb\u001b[0m: Agent Starting Run: os0kl5z7 with config:\n",
++      "\u001b[34m\u001b[1mwandb\u001b[0m: \tdepth: 9\n",
++      "\u001b[34m\u001b[1mwandb\u001b[0m: \theight: 70\n",
++      "\u001b[34m\u001b[1mwandb\u001b[0m: \tnum_domain: 1500\n",
++      "Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.\n"
++     ]
++    }
++   ],
+    "source": [
+     "# PDE parameters\n",
+     "mu = 0.5\n",
+@@ -210,8 +216,6 @@
+     "        loss_history, train_state = model.train()\n",
+     "        \n",
+     "        loss_test = train_state.best_loss_test\n",
+-    "        print(loss_test)\n",
+-    "        \n",
+     "        wandb.log({\"val_loss\": loss_test})\n",
+     "\n",
+     "# model.compile(\n",
+diff --git a/src/wandb/debug-internal.log b/src/wandb/debug-internal.log
+index 436f796..2b5ac0a 120000
+--- a/src/wandb/debug-internal.log
++++ b/src/wandb/debug-internal.log
+@@ -1 +1 @@
+-run-20220821_183748-s7sv3w9u/logs/debug-internal.log
+\ No newline at end of file
++run-20220821_203420-os0kl5z7/logs/debug-internal.log
+\ No newline at end of file
+diff --git a/src/wandb/debug.log b/src/wandb/debug.log
+index 8245cd1..73d139a 120000
+--- a/src/wandb/debug.log
++++ b/src/wandb/debug.log
+@@ -1 +1 @@
+-run-20220821_183748-s7sv3w9u/logs/debug.log
+\ No newline at end of file
++run-20220821_203420-os0kl5z7/logs/debug.log
+\ No newline at end of file
+diff --git a/src/wandb/latest-run b/src/wandb/latest-run
+index f76b440..0ecc821 120000
+--- a/src/wandb/latest-run
++++ b/src/wandb/latest-run
+@@ -1 +1 @@
+-run-20220821_183748-s7sv3w9u
+\ No newline at end of file
++run-20220821_203420-os0kl5z7
+\ No newline at end of file

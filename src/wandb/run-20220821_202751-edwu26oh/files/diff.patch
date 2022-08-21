@@ -1,0 +1,488 @@
+diff --git a/src/deepxde.ipynb b/src/deepxde.ipynb
+index 2aed139..b393e3d 100644
+--- a/src/deepxde.ipynb
++++ b/src/deepxde.ipynb
+@@ -26,8 +26,8 @@
+      "text": [
+       "Using backend: tensorflow.compat.v1\n",
+       "\n",
+-      "2022-08-21 18:23:35.944589: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory\n",
+-      "2022-08-21 18:23:35.944624: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.\n"
++      "2022-08-21 20:26:51.990434: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory\n",
++      "2022-08-21 20:26:51.990467: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.\n"
+      ]
+     },
+     {
+@@ -43,9 +43,9 @@
+      "name": "stderr",
+      "output_type": "stream",
+      "text": [
+-      "2022-08-21 18:23:52.204913: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory\n",
+-      "2022-08-21 18:23:52.231069: W tensorflow/stream_executor/cuda/cuda_driver.cc:269] failed call to cuInit: UNKNOWN ERROR (303)\n",
+-      "2022-08-21 18:23:52.231128: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (codespaces-baf76a): /proc/driver/nvidia/version does not exist\n"
++      "2022-08-21 20:27:07.761289: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory\n",
++      "2022-08-21 20:27:07.761333: W tensorflow/stream_executor/cuda/cuda_driver.cc:269] failed call to cuInit: UNKNOWN ERROR (303)\n",
++      "2022-08-21 20:27:07.761360: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (codespaces-baf76a): /proc/driver/nvidia/version does not exist\n"
+      ]
+     },
+     {
+@@ -59,15 +59,22 @@
+    ],
+    "source": [
+     "# surpress warnings from imports\n",
+-    "import warnings\n",
++    "# import warnings\n",
+     "# warnings.filterwarnings(\"ignore\")\n",
+     "\n",
+-    "import deepxde as dde\n",
+-    "from deepxde.backend import tf\n",
+-    "import numpy as np\n",
+-    "import matplotlib.pyplot as plt\n",
+-    "from scipy.integrate import odeint\n",
+-    "import wandb"
++    "import  deepxde as dde\n",
++    "from    deepxde.backend import tf\n",
++    "import  numpy as np\n",
++    "import  matplotlib.pyplot as plt\n",
++    "from    scipy.integrate import odeint\n",
++    "import  wandb"
++   ]
++  },
++  {
++   "cell_type": "markdown",
++   "metadata": {},
++   "source": [
++    "Weights and Biases is an ML-ops framework that runs experiments on the training of deep neural networks, enabling insights into the effect of hyperparameters on the performance of a model."
+    ]
+   },
+   {
+@@ -86,8 +93,8 @@
+      "name": "stdout",
+      "output_type": "stream",
+      "text": [
+-      "Create sweep with ID: h5zmp3h3\n",
+-      "Sweep URL: https://wandb.ai/raihaan123/PINNs/sweeps/h5zmp3h3\n"
++      "Create sweep with ID: jeld754s\n",
++      "Sweep URL: https://wandb.ai/raihaan123/PINNs/sweeps/jeld754s\n"
+      ]
+     }
+    ],
+@@ -99,17 +106,11 @@
+     "  \"method\": \"bayes\",\n",
+     "  \"metric\": {\"name\": \"val_loss\", \"goal\": \"minimize\"},\n",
+     "  \n",
+-    "  # \"method\" : \"random\",\n",
+-    "  \n",
+     "  \"parameters\" : {\n",
+     "    \n",
+     "    \"depth\"       : {\"values\" : range(1, 11)},\n",
+-    "    \"height\"      : {\"values\" : range(5, 55, 5)},\n",
+-    "    \"num_domain\"  : {\"values\" : range(1000, 5000, 1000)}\n",
+-    "    # \"weight1\" : {\"min\" : 0, \"max\" : 3},\n",
+-    "    # \"weight2\" : {\"min\" : 0, \"max\" : 3},\n",
+-    "    # \"weight3\" : {\"min\" : 0, \"max\" : 3}\n",
+-    "    \n",
++    "    \"height\"      : {\"values\" : range(50, 100, 5)},\n",
++    "    \"num_domain\"  : {\"values\" : range(1000, 3000, 500)}    \n",
+     "  }\n",
+     "}\n",
+     "\n",
+@@ -130,9 +131,360 @@
+   },
+   {
+    "cell_type": "code",
+-   "execution_count": null,
++   "execution_count": 3,
+    "metadata": {},
+-   "outputs": [],
++   "outputs": [
++    {
++     "name": "stderr",
++     "output_type": "stream",
++     "text": [
++      "\u001b[34m\u001b[1mwandb\u001b[0m: Agent Starting Run: 558q12k7 with config:\n",
++      "\u001b[34m\u001b[1mwandb\u001b[0m: \tdepth: 1\n",
++      "\u001b[34m\u001b[1mwandb\u001b[0m: \theight: 50\n",
++      "\u001b[34m\u001b[1mwandb\u001b[0m: \tnum_domain: 1000\n",
++      "Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.\n",
++      "\u001b[34m\u001b[1mwandb\u001b[0m: Currently logged in as: \u001b[33mraihaan123\u001b[0m. Use \u001b[1m`wandb login --relogin`\u001b[0m to force relogin\n"
++     ]
++    },
++    {
++     "data": {
++      "text/html": [
++       "wandb version 0.13.1 is available!  To upgrade, please run:\n",
++       " $ pip install wandb --upgrade"
++      ],
++      "text/plain": [
++       "<IPython.core.display.HTML object>"
++      ]
++     },
++     "metadata": {},
++     "output_type": "display_data"
++    },
++    {
++     "data": {
++      "text/html": [
++       "Tracking run with wandb version 0.12.21"
++      ],
++      "text/plain": [
++       "<IPython.core.display.HTML object>"
++      ]
++     },
++     "metadata": {},
++     "output_type": "display_data"
++    },
++    {
++     "data": {
++      "text/html": [
++       "Run data is saved locally in <code>/workspaces/UROP-Notes/src/wandb/run-20220821_202720-558q12k7</code>"
++      ],
++      "text/plain": [
++       "<IPython.core.display.HTML object>"
++      ]
++     },
++     "metadata": {},
++     "output_type": "display_data"
++    },
++    {
++     "data": {
++      "text/html": [
++       "Syncing run <strong><a href=\"https://wandb.ai/raihaan123/PINNs/runs/558q12k7\" target=\"_blank\">treasured-sweep-1</a></strong> to <a href=\"https://wandb.ai/raihaan123/PINNs\" target=\"_blank\">Weights & Biases</a> (<a href=\"https://wandb.me/run\" target=\"_blank\">docs</a>)<br/>Sweep page:  <a href=\"https://wandb.ai/raihaan123/PINNs/sweeps/jeld754s\" target=\"_blank\">https://wandb.ai/raihaan123/PINNs/sweeps/jeld754s</a>"
++      ],
++      "text/plain": [
++       "<IPython.core.display.HTML object>"
++      ]
++     },
++     "metadata": {},
++     "output_type": "display_data"
++    },
++    {
++     "name": "stdout",
++     "output_type": "stream",
++     "text": [
++      "Compiling model...\n",
++      "Building feed-forward neural network...\n",
++      "'build' took 0.060477 s\n",
++      "\n"
++     ]
++    },
++    {
++     "name": "stderr",
++     "output_type": "stream",
++     "text": [
++      "/opt/python/3.10.4/lib/python3.10/site-packages/skopt/sampler/sobol.py:246: UserWarning: The balance properties of Sobol' points require n to be a power of 2. 0 points have been previously generated, then: n=0+1002=1002. \n",
++      "  warnings.warn(\"The balance properties of Sobol' points require \"\n",
++      "/opt/python/3.10.4/lib/python3.10/site-packages/deepxde/nn/tensorflow_compat_v1/fnn.py:103: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.\n",
++      "  return tf.layers.dense(\n",
++      "2022-08-21 20:27:22.031271: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA\n",
++      "To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.\n"
++     ]
++    },
++    {
++     "name": "stdout",
++     "output_type": "stream",
++     "text": [
++      "'compile' took 0.856206 s\n",
++      "\n",
++      "Initializing variables...\n",
++      "Training model...\n",
++      "\n",
++      "Step      Train loss                        Test loss                         Test metric\n",
++      "0         [2.11e+00, 1.12e+00, 4.88e-01]    [2.11e+00, 1.12e+00, 4.88e-01]    []  \n"
++     ]
++    },
++    {
++     "name": "stderr",
++     "output_type": "stream",
++     "text": [
++      "2022-08-21 20:27:22.835307: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:354] MLIR V1 optimization pass is not enabled\n"
++     ]
++    },
++    {
++     "name": "stdout",
++     "output_type": "stream",
++     "text": [
++      "INFO:tensorflow:Optimization terminated with:\n",
++      "  Message: CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH\n",
++      "  Objective function value: 0.040301\n",
++      "  Number of iterations: 108\n",
++      "  Number of functions evaluations: 126\n",
++      "126       [3.92e-02, 1.12e-03, 3.30e-08]    [3.93e-02, 1.12e-03, 3.30e-08]    []  \n",
++      "\n",
++      "Best model at step 126:\n",
++      "  train loss: 4.03e-02\n",
++      "  test loss: 4.04e-02\n",
++      "  test metric: []\n",
++      "\n",
++      "'train' took 0.805473 s\n",
++      "\n"
++     ]
++    },
++    {
++     "data": {
++      "text/html": [
++       "Waiting for W&B process to finish... <strong style=\"color:green\">(success).</strong>"
++      ],
++      "text/plain": [
++       "<IPython.core.display.HTML object>"
++      ]
++     },
++     "metadata": {},
++     "output_type": "display_data"
++    },
++    {
++     "data": {
++      "text/html": [
++       "<style>\n",
++       "    table.wandb td:nth-child(1) { padding: 0 10px; text-align: left ; width: auto;} td:nth-child(2) {text-align: left ; width: 100%}\n",
++       "    .wandb-row { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-start; width: 100% }\n",
++       "    .wandb-col { display: flex; flex-direction: column; flex-basis: 100%; flex: 1; padding: 10px; }\n",
++       "    </style>\n",
++       "<div class=\"wandb-row\"><div class=\"wandb-col\"><h3>Run history:</h3><br/><table class=\"wandb\"><tr><td>val_loss</td><td>▁</td></tr></table><br/></div><div class=\"wandb-col\"><h3>Run summary:</h3><br/><table class=\"wandb\"><tr><td>val_loss</td><td>0.04039</td></tr></table><br/></div></div>"
++      ],
++      "text/plain": [
++       "<IPython.core.display.HTML object>"
++      ]
++     },
++     "metadata": {},
++     "output_type": "display_data"
++    },
++    {
++     "data": {
++      "text/html": [
++       "Synced <strong style=\"color:#cdcd00\">treasured-sweep-1</strong>: <a href=\"https://wandb.ai/raihaan123/PINNs/runs/558q12k7\" target=\"_blank\">https://wandb.ai/raihaan123/PINNs/runs/558q12k7</a><br/>Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)"
++      ],
++      "text/plain": [
++       "<IPython.core.display.HTML object>"
++      ]
++     },
++     "metadata": {},
++     "output_type": "display_data"
++    },
++    {
++     "data": {
++      "text/html": [
++       "Find logs at: <code>./wandb/run-20220821_202720-558q12k7/logs</code>"
++      ],
++      "text/plain": [
++       "<IPython.core.display.HTML object>"
++      ]
++     },
++     "metadata": {},
++     "output_type": "display_data"
++    },
++    {
++     "name": "stderr",
++     "output_type": "stream",
++     "text": [
++      "\u001b[34m\u001b[1mwandb\u001b[0m: Agent Starting Run: fmm1ov6f with config:\n",
++      "\u001b[34m\u001b[1mwandb\u001b[0m: \tdepth: 1\n",
++      "\u001b[34m\u001b[1mwandb\u001b[0m: \theight: 50\n",
++      "\u001b[34m\u001b[1mwandb\u001b[0m: \tnum_domain: 1000\n",
++      "Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.\n"
++     ]
++    },
++    {
++     "data": {
++      "text/html": [
++       "wandb version 0.13.1 is available!  To upgrade, please run:\n",
++       " $ pip install wandb --upgrade"
++      ],
++      "text/plain": [
++       "<IPython.core.display.HTML object>"
++      ]
++     },
++     "metadata": {},
++     "output_type": "display_data"
++    },
++    {
++     "data": {
++      "text/html": [
++       "Tracking run with wandb version 0.12.21"
++      ],
++      "text/plain": [
++       "<IPython.core.display.HTML object>"
++      ]
++     },
++     "metadata": {},
++     "output_type": "display_data"
++    },
++    {
++     "data": {
++      "text/html": [
++       "Run data is saved locally in <code>/workspaces/UROP-Notes/src/wandb/run-20220821_202730-fmm1ov6f</code>"
++      ],
++      "text/plain": [
++       "<IPython.core.display.HTML object>"
++      ]
++     },
++     "metadata": {},
++     "output_type": "display_data"
++    },
++    {
++     "data": {
++      "text/html": [
++       "Syncing run <strong><a href=\"https://wandb.ai/raihaan123/PINNs/runs/fmm1ov6f\" target=\"_blank\">gentle-sweep-2</a></strong> to <a href=\"https://wandb.ai/raihaan123/PINNs\" target=\"_blank\">Weights & Biases</a> (<a href=\"https://wandb.me/run\" target=\"_blank\">docs</a>)<br/>Sweep page:  <a href=\"https://wandb.ai/raihaan123/PINNs/sweeps/jeld754s\" target=\"_blank\">https://wandb.ai/raihaan123/PINNs/sweeps/jeld754s</a>"
++      ],
++      "text/plain": [
++       "<IPython.core.display.HTML object>"
++      ]
++     },
++     "metadata": {},
++     "output_type": "display_data"
++    },
++    {
++     "name": "stdout",
++     "output_type": "stream",
++     "text": [
++      "Compiling model...\n",
++      "Building feed-forward neural network...\n",
++      "'build' took 0.034688 s\n",
++      "\n"
++     ]
++    },
++    {
++     "name": "stderr",
++     "output_type": "stream",
++     "text": [
++      "/opt/python/3.10.4/lib/python3.10/site-packages/skopt/sampler/sobol.py:246: UserWarning: The balance properties of Sobol' points require n to be a power of 2. 0 points have been previously generated, then: n=0+1002=1002. \n",
++      "  warnings.warn(\"The balance properties of Sobol' points require \"\n",
++      "/opt/python/3.10.4/lib/python3.10/site-packages/deepxde/nn/tensorflow_compat_v1/fnn.py:103: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.\n",
++      "  return tf.layers.dense(\n"
++     ]
++    },
++    {
++     "name": "stdout",
++     "output_type": "stream",
++     "text": [
++      "'compile' took 0.427641 s\n",
++      "\n",
++      "Initializing variables...\n",
++      "Training model...\n",
++      "\n",
++      "Step      Train loss                        Test loss                         Test metric\n",
++      "0         [1.73e+00, 1.07e+00, 5.95e-02]    [1.73e+00, 1.07e+00, 5.95e-02]    []  \n",
++      "1000      [2.37e-02, 4.62e-05, 1.10e-04]                                          \n",
++      "2000      [1.20e-04, 1.23e-08, 2.46e-07]                                          \n",
++      "3000      [3.09e-05, 2.49e-10, 3.73e-09]                                          \n",
++      "INFO:tensorflow:Optimization terminated with:\n",
++      "  Message: CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH\n",
++      "  Objective function value: 0.000011\n",
++      "  Number of iterations: 2940\n",
++      "  Number of functions evaluations: 3416\n",
++      "3416      [1.13e-05, 7.00e-10, 6.13e-10]    [1.13e-05, 7.00e-10, 6.13e-10]    []  \n",
++      "\n",
++      "Best model at step 3416:\n",
++      "  train loss: 1.13e-05\n",
++      "  test loss: 1.13e-05\n",
++      "  test metric: []\n",
++      "\n",
++      "'train' took 10.853175 s\n",
++      "\n"
++     ]
++    },
++    {
++     "data": {
++      "text/html": [
++       "Waiting for W&B process to finish... <strong style=\"color:green\">(success).</strong>"
++      ],
++      "text/plain": [
++       "<IPython.core.display.HTML object>"
++      ]
++     },
++     "metadata": {},
++     "output_type": "display_data"
++    },
++    {
++     "data": {
++      "text/html": [
++       "<style>\n",
++       "    table.wandb td:nth-child(1) { padding: 0 10px; text-align: left ; width: auto;} td:nth-child(2) {text-align: left ; width: 100%}\n",
++       "    .wandb-row { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-start; width: 100% }\n",
++       "    .wandb-col { display: flex; flex-direction: column; flex-basis: 100%; flex: 1; padding: 10px; }\n",
++       "    </style>\n",
++       "<div class=\"wandb-row\"><div class=\"wandb-col\"><h3>Run history:</h3><br/><table class=\"wandb\"><tr><td>val_loss</td><td>▁</td></tr></table><br/></div><div class=\"wandb-col\"><h3>Run summary:</h3><br/><table class=\"wandb\"><tr><td>val_loss</td><td>1e-05</td></tr></table><br/></div></div>"
++      ],
++      "text/plain": [
++       "<IPython.core.display.HTML object>"
++      ]
++     },
++     "metadata": {},
++     "output_type": "display_data"
++    },
++    {
++     "data": {
++      "text/html": [
++       "Synced <strong style=\"color:#cdcd00\">gentle-sweep-2</strong>: <a href=\"https://wandb.ai/raihaan123/PINNs/runs/fmm1ov6f\" target=\"_blank\">https://wandb.ai/raihaan123/PINNs/runs/fmm1ov6f</a><br/>Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)"
++      ],
++      "text/plain": [
++       "<IPython.core.display.HTML object>"
++      ]
++     },
++     "metadata": {},
++     "output_type": "display_data"
++    },
++    {
++     "data": {
++      "text/html": [
++       "Find logs at: <code>./wandb/run-20220821_202730-fmm1ov6f/logs</code>"
++      ],
++      "text/plain": [
++       "<IPython.core.display.HTML object>"
++      ]
++     },
++     "metadata": {},
++     "output_type": "display_data"
++    },
++    {
++     "name": "stderr",
++     "output_type": "stream",
++     "text": [
++      "\u001b[34m\u001b[1mwandb\u001b[0m: Agent Starting Run: edwu26oh with config:\n",
++      "\u001b[34m\u001b[1mwandb\u001b[0m: \tdepth: 1\n",
++      "\u001b[34m\u001b[1mwandb\u001b[0m: \theight: 5\n",
++      "\u001b[34m\u001b[1mwandb\u001b[0m: \tnum_domain: 500\n",
++      "Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.\n"
++     ]
++    }
++   ],
+    "source": [
+     "# PDE parameters\n",
+     "mu = 0.5\n",
+@@ -210,8 +562,6 @@
+     "        loss_history, train_state = model.train()\n",
+     "        \n",
+     "        loss_test = train_state.best_loss_test\n",
+-    "        print(loss_test)\n",
+-    "        \n",
+     "        wandb.log({\"val_loss\": loss_test})\n",
+     "\n",
+     "# model.compile(\n",
+diff --git a/src/wandb/debug-internal.log b/src/wandb/debug-internal.log
+index 436f796..d794480 120000
+--- a/src/wandb/debug-internal.log
++++ b/src/wandb/debug-internal.log
+@@ -1 +1 @@
+-run-20220821_183748-s7sv3w9u/logs/debug-internal.log
+\ No newline at end of file
++run-20220821_202751-edwu26oh/logs/debug-internal.log
+\ No newline at end of file
+diff --git a/src/wandb/debug.log b/src/wandb/debug.log
+index 8245cd1..5e6b2ef 120000
+--- a/src/wandb/debug.log
++++ b/src/wandb/debug.log
+@@ -1 +1 @@
+-run-20220821_183748-s7sv3w9u/logs/debug.log
+\ No newline at end of file
++run-20220821_202751-edwu26oh/logs/debug.log
+\ No newline at end of file
+diff --git a/src/wandb/latest-run b/src/wandb/latest-run
+index f76b440..a8791bf 120000
+--- a/src/wandb/latest-run
++++ b/src/wandb/latest-run
+@@ -1 +1 @@
+-run-20220821_183748-s7sv3w9u
+\ No newline at end of file
++run-20220821_202751-edwu26oh
+\ No newline at end of file

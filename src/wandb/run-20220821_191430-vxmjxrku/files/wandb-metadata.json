@@ -1,0 +1,21 @@
+{
+    "os": "Linux-5.4.0-1086-azure-x86_64-with-glibc2.31",
+    "python": "3.10.4",
+    "heartbeatAt": "2022-08-21T19:14:31.473901",
+    "startedAt": "2022-08-21T19:14:30.281792",
+    "docker": null,
+    "cpu_count": 4,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/raihaan123/UROP-Notes",
+        "commit": "e8e216acc1605c7c3373f13bde2ca9f82eccc364"
+    },
+    "email": null,
+    "root": "/workspaces/UROP-Notes",
+    "host": "codespaces-baf76a",
+    "username": "codespace",
+    "executable": "/opt/python/latest/bin/python"
+}

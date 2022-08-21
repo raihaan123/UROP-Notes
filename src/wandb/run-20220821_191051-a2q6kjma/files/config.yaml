@@ -1,0 +1,40 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.21
+    framework: keras
+    is_jupyter_run: true
+    is_kaggle_kernel: false
+    python_version: 3.10.4
+    start_time: 1661109051
+    t:
+      1:
+      - 2
+      - 3
+      - 5
+      - 53
+      - 55
+      2:
+      - 2
+      - 3
+      - 5
+      - 53
+      - 55
+      3:
+      - 2
+      4: 3.10.4
+      5: 0.12.21
+      8:
+      - 1
+      - 5
+depth:
+  desc: null
+  value: 11
+height:
+  desc: null
+  value: 55
+num_domain:
+  desc: null
+  value: 5000
