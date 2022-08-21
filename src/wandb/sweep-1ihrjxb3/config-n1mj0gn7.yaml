@@ -1,0 +1,8 @@
+wandb_version: 1
+
+depth:
+  value: 10
+height:
+  value: 90
+num_domain:
+  value: 2000

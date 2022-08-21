@@ -1,0 +1,338 @@
+2022-08-21 22:07:05,255 INFO    Thread-402 (_run_job):16708 [wandb_setup.py:_flush():76] Configure stats pid to 16708
+2022-08-21 22:07:05,255 INFO    Thread-402 (_run_job):16708 [wandb_setup.py:_flush():76] Loading settings from /home/codespace/.config/wandb/settings
+2022-08-21 22:07:05,255 INFO    Thread-402 (_run_job):16708 [wandb_setup.py:_flush():76] Loading settings from wandb/settings
+2022-08-21 22:07:05,255 INFO    Thread-402 (_run_job):16708 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'entity': 'raihaan123', 'project': 'PINNs', 'root_dir': '/workspaces/UROP-Notes/src', 'run_id': 'khypm2i3', 'sweep_param_path': '/workspaces/UROP-Notes/src/wandb/sweep-49kaiz3x/config-khypm2i3.yaml', 'sweep_id': '49kaiz3x'}
+2022-08-21 22:07:05,255 INFO    Thread-402 (_run_job):16708 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2022-08-21 22:07:05,255 INFO    Thread-402 (_run_job):16708 [wandb_init.py:_log_setup():461] Logging user logs to /workspaces/UROP-Notes/src/wandb/run-20220821_220705-khypm2i3/logs/debug.log
+2022-08-21 22:07:05,255 INFO    Thread-402 (_run_job):16708 [wandb_init.py:_log_setup():462] Logging internal logs to /workspaces/UROP-Notes/src/wandb/run-20220821_220705-khypm2i3/logs/debug-internal.log
+2022-08-21 22:07:05,255 INFO    Thread-402 (_run_job):16708 [wandb_init.py:_jupyter_setup():411] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f266062d690>
+2022-08-21 22:07:05,255 INFO    Thread-402 (_run_job):16708 [wandb_init.py:init():495] calling init triggers
+2022-08-21 22:07:05,255 INFO    Thread-402 (_run_job):16708 [wandb_init.py:init():498] wandb.init called with sweep_config: {'depth': 7, 'height': 55, 'num_domain': 2000}
+config: {}
+2022-08-21 22:07:05,256 INFO    Thread-402 (_run_job):16708 [wandb_init.py:init():548] starting backend
+2022-08-21 22:07:05,256 INFO    Thread-402 (_run_job):16708 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-08-21 22:07:05,260 INFO    Thread-402 (_run_job):16708 [backend.py:ensure_launched():217] starting backend process...
+2022-08-21 22:07:05,261 INFO    Thread-402 (_run_job):16708 [backend.py:ensure_launched():222] started backend process with pid: 20373
+2022-08-21 22:07:05,262 INFO    Thread-402 (_run_job):16708 [wandb_init.py:init():558] backend started and connected
+2022-08-21 22:07:05,265 INFO    Thread-402 (_run_job):16708 [wandb_run.py:_config_callback():1131] config_cb None None {'depth': 7, 'height': 55, 'num_domain': 2000}
+2022-08-21 22:07:05,266 INFO    Thread-402 (_run_job):16708 [wandb_run.py:_label_probe_notebook():1084] probe notebook
+2022-08-21 22:07:05,267 INFO    Thread-402 (_run_job):16708 [wandb_run.py:_label_probe_notebook():1094] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2022-08-21 22:07:05,267 INFO    Thread-402 (_run_job):16708 [wandb_init.py:init():634] updated telemetry
+2022-08-21 22:07:05,271 INFO    Thread-402 (_run_job):16708 [wandb_init.py:init():665] communicating run to backend with 30 second timeout
+2022-08-21 22:07:06,437 INFO    Thread-402 (_run_job):16708 [wandb_run.py:_on_init():1919] communicating current version
+2022-08-21 22:07:06,480 INFO    Thread-402 (_run_job):16708 [wandb_run.py:_on_init():1923] got version response upgrade_message: "wandb version 0.13.1 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2022-08-21 22:07:06,481 INFO    Thread-402 (_run_job):16708 [wandb_init.py:init():700] starting run threads in backend
+2022-08-21 22:07:06,587 INFO    Thread-402 (_run_job):16708 [wandb_run.py:_console_start():1893] atexit reg
+2022-08-21 22:07:06,587 INFO    Thread-402 (_run_job):16708 [wandb_run.py:_redirect():1766] redirect: SettingsConsole.WRAP
+2022-08-21 22:07:06,587 INFO    Thread-402 (_run_job):16708 [wandb_run.py:_redirect():1803] Wrapping output streams.
+2022-08-21 22:07:06,594 INFO    Thread-402 (_run_job):16708 [wandb_run.py:_redirect():1827] Redirects installed.
+2022-08-21 22:07:06,594 INFO    Thread-402 (_run_job):16708 [wandb_init.py:init():732] run started, returning control to user process
+2022-08-21 22:08:23,254 INFO    MainThread:16708 [wandb_init.py:_pause_backend():374] pausing backend
+2022-08-21 22:08:23,254 INFO    MainThread:16708 [jupyter.py:save_ipynb():380] looking for notebook: None
+2022-08-21 22:08:35,240 INFO    MainThread:16708 [wandb_init.py:_resume_backend():383] resuming backend
+2022-08-21 22:08:35,242 INFO    MainThread:16708 [wandb_init.py:_pause_backend():374] pausing backend
+2022-08-21 22:08:35,244 INFO    MainThread:16708 [jupyter.py:save_ipynb():380] looking for notebook: None
+2022-08-21 22:09:25,369 INFO    MainThread:16708 [wandb_init.py:_resume_backend():383] resuming backend
+2022-08-21 22:09:25,959 INFO    MainThread:16708 [wandb_init.py:_pause_backend():374] pausing backend
+2022-08-21 22:09:25,959 INFO    MainThread:16708 [jupyter.py:save_ipynb():380] looking for notebook: None
+2022-08-21 22:09:53,019 INFO    MainThread:16708 [wandb_init.py:_resume_backend():383] resuming backend
+2022-08-21 22:09:53,055 INFO    MainThread:16708 [pyagent.py:run():316] Starting sweep agent: entity=None, project=None, count=100
+2022-08-21 22:09:53,632 ERROR   Thread-412 (_run_job):16708 [jupyter.py:notebook_metadata():230] Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.
+2022-08-21 22:09:54,214 INFO    Thread-412 (_run_job):16708 [wandb_setup.py:_flush():76] Configure stats pid to 16708
+2022-08-21 22:09:54,215 INFO    Thread-412 (_run_job):16708 [wandb_setup.py:_flush():76] Loading settings from /home/codespace/.config/wandb/settings
+2022-08-21 22:09:54,215 INFO    Thread-412 (_run_job):16708 [wandb_setup.py:_flush():76] Loading settings from wandb/settings
+2022-08-21 22:09:54,215 INFO    Thread-412 (_run_job):16708 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'entity': 'raihaan123', 'project': 'PINNs', 'root_dir': '/workspaces/UROP-Notes/src', 'run_id': 'uda9ir0l', 'sweep_param_path': '/workspaces/UROP-Notes/src/wandb/sweep-1ihrjxb3/config-uda9ir0l.yaml', 'sweep_id': '1ihrjxb3'}
+2022-08-21 22:09:54,215 INFO    Thread-412 (_run_job):16708 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2022-08-21 22:09:54,215 INFO    Thread-412 (_run_job):16708 [wandb_init.py:_log_setup():461] Logging user logs to /workspaces/UROP-Notes/src/wandb/run-20220821_220954-uda9ir0l/logs/debug.log
+2022-08-21 22:09:54,215 INFO    Thread-412 (_run_job):16708 [wandb_init.py:_log_setup():462] Logging internal logs to /workspaces/UROP-Notes/src/wandb/run-20220821_220954-uda9ir0l/logs/debug-internal.log
+2022-08-21 22:09:54,216 INFO    Thread-412 (_run_job):16708 [wandb_init.py:init():495] calling init triggers
+2022-08-21 22:09:54,216 INFO    Thread-412 (_run_job):16708 [wandb_init.py:init():498] wandb.init called with sweep_config: {'depth': 13, 'height': 23, 'num_domain': 2400}
+config: {}
+2022-08-21 22:09:54,216 INFO    Thread-412 (_run_job):16708 [wandb_init.py:init():548] starting backend
+2022-08-21 22:09:54,216 INFO    Thread-412 (_run_job):16708 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-08-21 22:09:54,237 INFO    Thread-412 (_run_job):16708 [backend.py:ensure_launched():217] starting backend process...
+2022-08-21 22:09:54,244 INFO    Thread-412 (_run_job):16708 [backend.py:ensure_launched():222] started backend process with pid: 21403
+2022-08-21 22:09:54,247 INFO    Thread-412 (_run_job):16708 [wandb_init.py:init():558] backend started and connected
+2022-08-21 22:09:54,255 INFO    Thread-412 (_run_job):16708 [wandb_run.py:_config_callback():1131] config_cb None None {'depth': 13, 'height': 23, 'num_domain': 2400}
+2022-08-21 22:09:54,262 INFO    Thread-412 (_run_job):16708 [wandb_run.py:_label_probe_notebook():1084] probe notebook
+2022-08-21 22:09:54,314 INFO    Thread-412 (_run_job):16708 [wandb_run.py:_label_probe_notebook():1094] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2022-08-21 22:09:54,314 INFO    Thread-412 (_run_job):16708 [wandb_init.py:init():634] updated telemetry
+2022-08-21 22:09:54,415 INFO    Thread-412 (_run_job):16708 [wandb_init.py:init():665] communicating run to backend with 30 second timeout
+2022-08-21 22:09:57,662 INFO    Thread-412 (_run_job):16708 [wandb_run.py:_on_init():1919] communicating current version
+2022-08-21 22:09:57,757 INFO    Thread-412 (_run_job):16708 [wandb_run.py:_on_init():1923] got version response upgrade_message: "wandb version 0.13.1 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2022-08-21 22:09:57,758 INFO    Thread-412 (_run_job):16708 [wandb_init.py:init():700] starting run threads in backend
+2022-08-21 22:09:58,130 INFO    Thread-412 (_run_job):16708 [wandb_run.py:_console_start():1893] atexit reg
+2022-08-21 22:09:58,131 INFO    Thread-412 (_run_job):16708 [wandb_run.py:_redirect():1766] redirect: SettingsConsole.WRAP
+2022-08-21 22:09:58,131 INFO    Thread-412 (_run_job):16708 [wandb_run.py:_redirect():1803] Wrapping output streams.
+2022-08-21 22:09:59,064 INFO    Thread-412 (_run_job):16708 [wandb_run.py:_redirect():1827] Redirects installed.
+2022-08-21 22:09:59,065 INFO    Thread-412 (_run_job):16708 [wandb_init.py:init():732] run started, returning control to user process
+2022-08-21 22:10:14,871 INFO    Thread-412 (_run_job):16708 [wandb_run.py:_finish():1680] finishing run raihaan123/PINNs/uda9ir0l
+2022-08-21 22:10:14,916 INFO    Thread-412 (_run_job):16708 [wandb_run.py:_atexit_cleanup():1862] got exitcode: 0
+2022-08-21 22:10:14,920 INFO    Thread-412 (_run_job):16708 [wandb_run.py:_restore():1834] restore
+2022-08-21 22:10:15,832 INFO    Thread-412 (_run_job):16708 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 2
+}
+pusher_stats {
+  uploaded_bytes: 236618
+  total_bytes: 236618
+}
+
+2022-08-21 22:10:16,051 INFO    Thread-412 (_run_job):16708 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 2
+}
+pusher_stats {
+  uploaded_bytes: 236618
+  total_bytes: 236618
+}
+
+2022-08-21 22:10:16,665 INFO    Thread-412 (_run_job):16708 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 236618
+  total_bytes: 240878
+}
+
+2022-08-21 22:10:16,778 INFO    Thread-412 (_run_job):16708 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 236618
+  total_bytes: 240878
+}
+
+2022-08-21 22:10:16,935 INFO    Thread-412 (_run_job):16708 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 236618
+  total_bytes: 240878
+}
+
+2022-08-21 22:10:17,037 INFO    Thread-412 (_run_job):16708 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 240878
+  total_bytes: 240878
+}
+
+2022-08-21 22:10:17,152 INFO    Thread-412 (_run_job):16708 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 240878
+  total_bytes: 240878
+}
+
+2022-08-21 22:10:17,256 INFO    Thread-412 (_run_job):16708 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 240878
+  total_bytes: 240878
+}
+
+2022-08-21 22:10:17,358 INFO    Thread-412 (_run_job):16708 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 240878
+  total_bytes: 240878
+}
+
+2022-08-21 22:10:17,463 INFO    Thread-412 (_run_job):16708 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 240878
+  total_bytes: 240878
+}
+
+2022-08-21 22:10:17,644 INFO    Thread-412 (_run_job):16708 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 240878
+  total_bytes: 240878
+}
+
+2022-08-21 22:10:18,038 INFO    Thread-412 (_run_job):16708 [wandb_run.py:_on_finish():1991] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 240878
+  total_bytes: 240878
+}
+local_info {
+}
+
+2022-08-21 22:10:19,592 INFO    Thread-412 (_run_job):16708 [wandb_run.py:_footer_history_summary_info():3099] rendering history
+2022-08-21 22:10:19,593 INFO    Thread-412 (_run_job):16708 [wandb_run.py:_footer_history_summary_info():3131] rendering summary
+2022-08-21 22:10:19,598 INFO    Thread-412 (_run_job):16708 [wandb_run.py:_footer_sync_info():3055] logging synced files
+2022-08-21 22:10:23,230 INFO    Thread-402 (_run_job):16708 [wandb_run.py:_finish():1680] finishing run raihaan123/PINNs/khypm2i3
+2022-08-21 22:10:23,239 INFO    Thread-402 (_run_job):16708 [jupyter.py:save_history():464] saving 9 cells to _session_history.ipynb
+2022-08-21 22:10:29,617 ERROR   Thread-421 (_run_job):16708 [jupyter.py:notebook_metadata():230] Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.
+2022-08-21 22:10:29,886 INFO    Thread-421 (_run_job):16708 [wandb_setup.py:_flush():76] Configure stats pid to 16708
+2022-08-21 22:10:29,886 INFO    Thread-421 (_run_job):16708 [wandb_setup.py:_flush():76] Loading settings from /home/codespace/.config/wandb/settings
+2022-08-21 22:10:29,886 INFO    Thread-421 (_run_job):16708 [wandb_setup.py:_flush():76] Loading settings from wandb/settings
+2022-08-21 22:10:29,886 INFO    Thread-421 (_run_job):16708 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'entity': 'raihaan123', 'project': 'PINNs', 'root_dir': '/workspaces/UROP-Notes/src', 'run_id': 'l8x0gvgy', 'sweep_param_path': '/workspaces/UROP-Notes/src/wandb/sweep-1ihrjxb3/config-l8x0gvgy.yaml', 'sweep_id': '1ihrjxb3'}
+2022-08-21 22:10:29,886 INFO    Thread-421 (_run_job):16708 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2022-08-21 22:10:29,886 INFO    Thread-421 (_run_job):16708 [wandb_init.py:_log_setup():461] Logging user logs to /workspaces/UROP-Notes/src/wandb/run-20220821_221029-l8x0gvgy/logs/debug.log
+2022-08-21 22:10:29,886 INFO    Thread-421 (_run_job):16708 [wandb_init.py:_log_setup():462] Logging internal logs to /workspaces/UROP-Notes/src/wandb/run-20220821_221029-l8x0gvgy/logs/debug-internal.log
+2022-08-21 22:10:29,887 INFO    Thread-421 (_run_job):16708 [wandb_init.py:init():495] calling init triggers
+2022-08-21 22:10:29,887 INFO    Thread-421 (_run_job):16708 [wandb_init.py:init():498] wandb.init called with sweep_config: {'depth': 17, 'height': 17, 'num_domain': 1400}
+config: {}
+2022-08-21 22:10:29,887 INFO    Thread-421 (_run_job):16708 [wandb_init.py:init():548] starting backend
+2022-08-21 22:10:29,887 INFO    Thread-421 (_run_job):16708 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-08-21 22:10:29,891 INFO    Thread-421 (_run_job):16708 [backend.py:ensure_launched():217] starting backend process...
+2022-08-21 22:10:29,892 INFO    Thread-421 (_run_job):16708 [backend.py:ensure_launched():222] started backend process with pid: 21672
+2022-08-21 22:10:29,893 INFO    Thread-421 (_run_job):16708 [wandb_init.py:init():558] backend started and connected
+2022-08-21 22:10:29,897 INFO    Thread-421 (_run_job):16708 [wandb_run.py:_config_callback():1131] config_cb None None {'depth': 17, 'height': 17, 'num_domain': 1400}
+2022-08-21 22:10:29,898 INFO    Thread-421 (_run_job):16708 [wandb_run.py:_label_probe_notebook():1084] probe notebook
+2022-08-21 22:10:29,898 INFO    Thread-421 (_run_job):16708 [wandb_run.py:_label_probe_notebook():1094] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2022-08-21 22:10:29,898 INFO    Thread-421 (_run_job):16708 [wandb_init.py:init():634] updated telemetry
+2022-08-21 22:10:29,903 INFO    Thread-421 (_run_job):16708 [wandb_init.py:init():665] communicating run to backend with 30 second timeout
+2022-08-21 22:10:31,055 INFO    Thread-421 (_run_job):16708 [wandb_run.py:_on_init():1919] communicating current version
+2022-08-21 22:10:31,088 INFO    Thread-421 (_run_job):16708 [wandb_run.py:_on_init():1923] got version response upgrade_message: "wandb version 0.13.1 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2022-08-21 22:10:31,089 INFO    Thread-421 (_run_job):16708 [wandb_init.py:init():700] starting run threads in backend
+2022-08-21 22:10:31,196 INFO    Thread-421 (_run_job):16708 [wandb_run.py:_console_start():1893] atexit reg
+2022-08-21 22:10:31,196 INFO    Thread-421 (_run_job):16708 [wandb_run.py:_redirect():1766] redirect: SettingsConsole.WRAP
+2022-08-21 22:10:31,196 INFO    Thread-421 (_run_job):16708 [wandb_run.py:_redirect():1803] Wrapping output streams.
+2022-08-21 22:10:31,206 INFO    Thread-421 (_run_job):16708 [wandb_run.py:_redirect():1827] Redirects installed.
+2022-08-21 22:10:31,206 INFO    Thread-421 (_run_job):16708 [wandb_init.py:init():732] run started, returning control to user process
+2022-08-21 22:10:35,551 INFO    Thread-421 (_run_job):16708 [wandb_run.py:_finish():1680] finishing run raihaan123/PINNs/l8x0gvgy
+2022-08-21 22:10:35,553 INFO    Thread-421 (_run_job):16708 [wandb_run.py:_atexit_cleanup():1862] got exitcode: 0
+2022-08-21 22:10:35,555 INFO    Thread-421 (_run_job):16708 [wandb_run.py:_restore():1834] restore
+2022-08-21 22:10:35,720 INFO    Thread-421 (_run_job):16708 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 2
+}
+pusher_stats {
+  uploaded_bytes: 237521
+  total_bytes: 237521
+}
+
+2022-08-21 22:10:35,963 INFO    Thread-421 (_run_job):16708 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 2
+}
+pusher_stats {
+  uploaded_bytes: 237521
+  total_bytes: 237521
+}
+
+2022-08-21 22:10:36,078 INFO    Thread-421 (_run_job):16708 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 237521
+  total_bytes: 241870
+}
+
+2022-08-21 22:10:36,181 INFO    Thread-421 (_run_job):16708 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 237521
+  total_bytes: 241870
+}
+
+2022-08-21 22:10:36,283 INFO    Thread-421 (_run_job):16708 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 241870
+  total_bytes: 241870
+}
+
+2022-08-21 22:10:36,385 INFO    Thread-421 (_run_job):16708 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 241870
+  total_bytes: 241870
+}
+
+2022-08-21 22:10:36,487 INFO    Thread-421 (_run_job):16708 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 241870
+  total_bytes: 241870
+}
+
+2022-08-21 22:10:36,589 INFO    Thread-421 (_run_job):16708 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 241870
+  total_bytes: 241870
+}
+
+2022-08-21 22:10:36,692 INFO    Thread-421 (_run_job):16708 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 241870
+  total_bytes: 241870
+}
+
+2022-08-21 22:10:37,211 INFO    Thread-421 (_run_job):16708 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 241870
+  total_bytes: 241870
+}
+
+2022-08-21 22:10:37,570 INFO    Thread-421 (_run_job):16708 [wandb_run.py:_on_finish():1991] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 241870
+  total_bytes: 241870
+}
+local_info {
+}
+
+2022-08-21 22:10:38,741 INFO    Thread-421 (_run_job):16708 [wandb_run.py:_footer_history_summary_info():3099] rendering history
+2022-08-21 22:10:38,741 INFO    Thread-421 (_run_job):16708 [wandb_run.py:_footer_history_summary_info():3131] rendering summary
+2022-08-21 22:10:38,744 INFO    Thread-421 (_run_job):16708 [wandb_run.py:_footer_sync_info():3055] logging synced files
+2022-08-21 22:10:40,612 ERROR   Thread-430 (_run_job):16708 [jupyter.py:notebook_metadata():230] Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.
+2022-08-21 22:10:40,888 INFO    Thread-430 (_run_job):16708 [wandb_setup.py:_flush():76] Configure stats pid to 16708
+2022-08-21 22:10:40,888 INFO    Thread-430 (_run_job):16708 [wandb_setup.py:_flush():76] Loading settings from /home/codespace/.config/wandb/settings
+2022-08-21 22:10:40,888 INFO    Thread-430 (_run_job):16708 [wandb_setup.py:_flush():76] Loading settings from wandb/settings
+2022-08-21 22:10:40,888 INFO    Thread-430 (_run_job):16708 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'entity': 'raihaan123', 'project': 'PINNs', 'root_dir': '/workspaces/UROP-Notes/src', 'run_id': 'n1mj0gn7', 'sweep_param_path': '/workspaces/UROP-Notes/src/wandb/sweep-1ihrjxb3/config-n1mj0gn7.yaml', 'sweep_id': '1ihrjxb3'}
+2022-08-21 22:10:40,888 INFO    Thread-430 (_run_job):16708 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2022-08-21 22:10:40,888 INFO    Thread-430 (_run_job):16708 [wandb_init.py:_log_setup():461] Logging user logs to /workspaces/UROP-Notes/src/wandb/run-20220821_221040-n1mj0gn7/logs/debug.log
+2022-08-21 22:10:40,888 INFO    Thread-430 (_run_job):16708 [wandb_init.py:_log_setup():462] Logging internal logs to /workspaces/UROP-Notes/src/wandb/run-20220821_221040-n1mj0gn7/logs/debug-internal.log
+2022-08-21 22:10:40,888 INFO    Thread-430 (_run_job):16708 [wandb_init.py:init():495] calling init triggers
+2022-08-21 22:10:40,889 INFO    Thread-430 (_run_job):16708 [wandb_init.py:init():498] wandb.init called with sweep_config: {'depth': 10, 'height': 90, 'num_domain': 2000}
+config: {}
+2022-08-21 22:10:40,889 INFO    Thread-430 (_run_job):16708 [wandb_init.py:init():548] starting backend
+2022-08-21 22:10:40,889 INFO    Thread-430 (_run_job):16708 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-08-21 22:10:40,893 INFO    Thread-430 (_run_job):16708 [backend.py:ensure_launched():217] starting backend process...
+2022-08-21 22:10:40,895 INFO    Thread-430 (_run_job):16708 [backend.py:ensure_launched():222] started backend process with pid: 21794
+2022-08-21 22:10:40,895 INFO    Thread-430 (_run_job):16708 [wandb_init.py:init():558] backend started and connected
+2022-08-21 22:10:40,899 INFO    Thread-430 (_run_job):16708 [wandb_run.py:_config_callback():1131] config_cb None None {'depth': 10, 'height': 90, 'num_domain': 2000}
+2022-08-21 22:10:40,900 INFO    Thread-430 (_run_job):16708 [wandb_run.py:_label_probe_notebook():1084] probe notebook
+2022-08-21 22:10:40,900 INFO    Thread-430 (_run_job):16708 [wandb_run.py:_label_probe_notebook():1094] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2022-08-21 22:10:40,900 INFO    Thread-430 (_run_job):16708 [wandb_init.py:init():634] updated telemetry
+2022-08-21 22:10:40,905 INFO    Thread-430 (_run_job):16708 [wandb_init.py:init():665] communicating run to backend with 30 second timeout
+2022-08-21 22:10:41,996 INFO    Thread-430 (_run_job):16708 [wandb_run.py:_on_init():1919] communicating current version
+2022-08-21 22:10:42,036 INFO    Thread-430 (_run_job):16708 [wandb_run.py:_on_init():1923] got version response upgrade_message: "wandb version 0.13.1 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2022-08-21 22:10:42,036 INFO    Thread-430 (_run_job):16708 [wandb_init.py:init():700] starting run threads in backend
+2022-08-21 22:10:42,142 INFO    Thread-430 (_run_job):16708 [wandb_run.py:_console_start():1893] atexit reg
+2022-08-21 22:10:42,143 INFO    Thread-430 (_run_job):16708 [wandb_run.py:_redirect():1766] redirect: SettingsConsole.WRAP
+2022-08-21 22:10:42,143 INFO    Thread-430 (_run_job):16708 [wandb_run.py:_redirect():1803] Wrapping output streams.
+2022-08-21 22:10:42,157 INFO    Thread-430 (_run_job):16708 [wandb_run.py:_redirect():1827] Redirects installed.
+2022-08-21 22:10:42,157 INFO    Thread-430 (_run_job):16708 [wandb_init.py:init():732] run started, returning control to user process

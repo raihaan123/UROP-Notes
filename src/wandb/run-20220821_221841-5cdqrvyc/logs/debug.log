@@ -1,0 +1,30 @@
+2022-08-21 22:18:41,567 INFO    Thread-195 (_run_job):21983 [wandb_setup.py:_flush():76] Configure stats pid to 21983
+2022-08-21 22:18:41,567 INFO    Thread-195 (_run_job):21983 [wandb_setup.py:_flush():76] Loading settings from /home/codespace/.config/wandb/settings
+2022-08-21 22:18:41,567 INFO    Thread-195 (_run_job):21983 [wandb_setup.py:_flush():76] Loading settings from wandb/settings
+2022-08-21 22:18:41,567 INFO    Thread-195 (_run_job):21983 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'entity': 'raihaan123', 'project': 'PINNs', 'root_dir': '/workspaces/UROP-Notes/src', 'run_id': '5cdqrvyc', 'sweep_param_path': '/workspaces/UROP-Notes/src/wandb/sweep-o7vo0i9r/config-5cdqrvyc.yaml', 'sweep_id': 'o7vo0i9r'}
+2022-08-21 22:18:41,568 INFO    Thread-195 (_run_job):21983 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2022-08-21 22:18:41,568 INFO    Thread-195 (_run_job):21983 [wandb_init.py:_log_setup():461] Logging user logs to /workspaces/UROP-Notes/src/wandb/run-20220821_221841-5cdqrvyc/logs/debug.log
+2022-08-21 22:18:41,568 INFO    Thread-195 (_run_job):21983 [wandb_init.py:_log_setup():462] Logging internal logs to /workspaces/UROP-Notes/src/wandb/run-20220821_221841-5cdqrvyc/logs/debug-internal.log
+2022-08-21 22:18:41,568 INFO    Thread-195 (_run_job):21983 [wandb_init.py:_jupyter_setup():411] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fc9c5518820>
+2022-08-21 22:18:41,568 INFO    Thread-195 (_run_job):21983 [wandb_init.py:init():495] calling init triggers
+2022-08-21 22:18:41,568 INFO    Thread-195 (_run_job):21983 [wandb_init.py:init():498] wandb.init called with sweep_config: {'depth': 15, 'height': 100, 'num_domain': 1000}
+config: {}
+2022-08-21 22:18:41,568 INFO    Thread-195 (_run_job):21983 [wandb_init.py:init():548] starting backend
+2022-08-21 22:18:41,568 INFO    Thread-195 (_run_job):21983 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-08-21 22:18:41,572 INFO    Thread-195 (_run_job):21983 [backend.py:ensure_launched():217] starting backend process...
+2022-08-21 22:18:41,574 INFO    Thread-195 (_run_job):21983 [backend.py:ensure_launched():222] started backend process with pid: 26095
+2022-08-21 22:18:41,574 INFO    Thread-195 (_run_job):21983 [wandb_init.py:init():558] backend started and connected
+2022-08-21 22:18:41,578 INFO    Thread-195 (_run_job):21983 [wandb_run.py:_config_callback():1131] config_cb None None {'depth': 15, 'height': 100, 'num_domain': 1000}
+2022-08-21 22:18:41,579 INFO    Thread-195 (_run_job):21983 [wandb_run.py:_label_probe_notebook():1084] probe notebook
+2022-08-21 22:18:41,579 INFO    Thread-195 (_run_job):21983 [wandb_run.py:_label_probe_notebook():1094] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2022-08-21 22:18:41,579 INFO    Thread-195 (_run_job):21983 [wandb_init.py:init():634] updated telemetry
+2022-08-21 22:18:41,585 INFO    Thread-195 (_run_job):21983 [wandb_init.py:init():665] communicating run to backend with 30 second timeout
+2022-08-21 22:18:42,697 INFO    Thread-195 (_run_job):21983 [wandb_run.py:_on_init():1919] communicating current version
+2022-08-21 22:18:42,746 INFO    Thread-195 (_run_job):21983 [wandb_run.py:_on_init():1923] got version response upgrade_message: "wandb version 0.13.1 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2022-08-21 22:18:42,747 INFO    Thread-195 (_run_job):21983 [wandb_init.py:init():700] starting run threads in backend
+2022-08-21 22:18:42,889 INFO    Thread-195 (_run_job):21983 [wandb_run.py:_console_start():1893] atexit reg
+2022-08-21 22:18:42,889 INFO    Thread-195 (_run_job):21983 [wandb_run.py:_redirect():1766] redirect: SettingsConsole.WRAP
+2022-08-21 22:18:42,889 INFO    Thread-195 (_run_job):21983 [wandb_run.py:_redirect():1803] Wrapping output streams.
+2022-08-21 22:18:42,896 INFO    Thread-195 (_run_job):21983 [wandb_run.py:_redirect():1827] Redirects installed.
+2022-08-21 22:18:42,897 INFO    Thread-195 (_run_job):21983 [wandb_init.py:init():732] run started, returning control to user process

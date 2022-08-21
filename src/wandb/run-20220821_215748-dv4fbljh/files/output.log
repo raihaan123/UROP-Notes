@@ -11,3 +11,16 @@ Training model...
 Step      Train loss                        Test loss                         Test metric
 0         [7.33e-03, 1.02e+00, 2.92e-03]    [7.34e-03, 1.02e+00, 2.92e-03]    []
 1000      [3.79e-02, 1.06e-03, 1.93e-07]
+2000      [1.79e-03, 4.84e-08, 1.17e-05]
+3000      [9.67e-05, 4.46e-08, 0.00e+00]
+INFO:tensorflow:Optimization terminated with:
+  Message: CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH
+  Objective function value: 0.000026
+  Number of iterations: 3151
+  Number of functions evaluations: 3720
+3720      [2.56e-05, 8.88e-10, 2.51e-09]    [2.54e-05, 8.88e-10, 2.51e-09]    []
+Best model at step 3720:
+  train loss: 2.56e-05
+  test loss: 2.54e-05
+  test metric: []
+'train' took 388.677637 s

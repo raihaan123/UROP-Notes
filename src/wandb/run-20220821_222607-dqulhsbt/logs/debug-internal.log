@@ -1,0 +1,58 @@
+2022-08-21 22:26:08,513 INFO    MainThread:28696 [internal.py:wandb_internal():90] W&B internal server running at pid: 28696, started at: 2022-08-21 22:26:08.513420
+2022-08-21 22:26:08,519 DEBUG   SenderThread:28696 [sender.py:send():236] send: header
+2022-08-21 22:26:08,520 INFO    WriterThread:28696 [datastore.py:open_for_write():75] open: /workspaces/UROP-Notes/src/wandb/run-20220821_222607-dqulhsbt/run-dqulhsbt.wandb
+2022-08-21 22:26:08,520 DEBUG   SenderThread:28696 [sender.py:send():236] send: run
+2022-08-21 22:26:08,720 DEBUG   HandlerThread:28696 [handler.py:handle_request():140] handle_request: check_version
+2022-08-21 22:26:08,738 INFO    SenderThread:28696 [dir_watcher.py:__init__():216] watching files in: /workspaces/UROP-Notes/src/wandb/run-20220821_222607-dqulhsbt/files
+2022-08-21 22:26:08,738 INFO    SenderThread:28696 [sender.py:_start_run_threads():815] run started: dqulhsbt with start time 1661120767
+2022-08-21 22:26:08,738 DEBUG   SenderThread:28696 [sender.py:send():236] send: summary
+2022-08-21 22:26:08,739 INFO    SenderThread:28696 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-08-21 22:26:08,739 DEBUG   SenderThread:28696 [sender.py:send_request():250] send_request: check_version
+2022-08-21 22:26:08,828 DEBUG   HandlerThread:28696 [handler.py:handle_request():140] handle_request: run_start
+2022-08-21 22:26:08,838 DEBUG   HandlerThread:28696 [meta.py:__init__():35] meta init
+2022-08-21 22:26:08,839 DEBUG   HandlerThread:28696 [meta.py:__init__():49] meta init done
+2022-08-21 22:26:08,839 DEBUG   HandlerThread:28696 [meta.py:probe():209] probe
+2022-08-21 22:26:08,840 DEBUG   HandlerThread:28696 [meta.py:_setup_git():199] setup git
+2022-08-21 22:26:08,861 DEBUG   HandlerThread:28696 [meta.py:_setup_git():206] setup git done
+2022-08-21 22:26:08,861 DEBUG   HandlerThread:28696 [meta.py:_save_code():87] save code
+2022-08-21 22:26:08,861 WARNING HandlerThread:28696 [meta.py:_save_code():89] unable to save code -- program entry not found
+2022-08-21 22:26:08,861 DEBUG   HandlerThread:28696 [meta.py:_save_patches():125] save patches
+2022-08-21 22:26:09,070 DEBUG   HandlerThread:28696 [meta.py:_save_patches():167] save patches done
+2022-08-21 22:26:09,070 DEBUG   HandlerThread:28696 [meta.py:_save_pip():53] save pip
+2022-08-21 22:26:09,071 DEBUG   HandlerThread:28696 [meta.py:_save_pip():67] save pip done
+2022-08-21 22:26:09,071 DEBUG   HandlerThread:28696 [meta.py:probe():247] probe done
+2022-08-21 22:26:09,123 DEBUG   SenderThread:28696 [sender.py:send():236] send: files
+2022-08-21 22:26:09,123 INFO    SenderThread:28696 [sender.py:_save_file():952] saving file wandb-metadata.json with policy now
+2022-08-21 22:26:09,124 INFO    SenderThread:28696 [sender.py:_save_file():952] saving file diff.patch with policy now
+2022-08-21 22:26:09,139 DEBUG   HandlerThread:28696 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-21 22:26:09,139 DEBUG   SenderThread:28696 [sender.py:send_request():250] send_request: stop_status
+2022-08-21 22:26:09,287 DEBUG   SenderThread:28696 [sender.py:send():236] send: telemetry
+2022-08-21 22:26:09,623 INFO    Thread-11 :28696 [upload_job.py:push():138] Uploaded file /tmp/tmpbk6zub71wandb/3t536c5p-wandb-metadata.json
+2022-08-21 22:26:09,734 INFO    Thread-7  :28696 [dir_watcher.py:_on_file_created():269] file/dir created: /workspaces/UROP-Notes/src/wandb/run-20220821_222607-dqulhsbt/files/output.log
+2022-08-21 22:26:09,734 INFO    Thread-7  :28696 [dir_watcher.py:_on_file_created():269] file/dir created: /workspaces/UROP-Notes/src/wandb/run-20220821_222607-dqulhsbt/files/wandb-metadata.json
+2022-08-21 22:26:09,735 INFO    Thread-7  :28696 [dir_watcher.py:_on_file_created():269] file/dir created: /workspaces/UROP-Notes/src/wandb/run-20220821_222607-dqulhsbt/files/wandb-summary.json
+2022-08-21 22:26:09,735 INFO    Thread-7  :28696 [dir_watcher.py:_on_file_created():269] file/dir created: /workspaces/UROP-Notes/src/wandb/run-20220821_222607-dqulhsbt/files/requirements.txt
+2022-08-21 22:26:09,735 INFO    Thread-7  :28696 [dir_watcher.py:_on_file_created():269] file/dir created: /workspaces/UROP-Notes/src/wandb/run-20220821_222607-dqulhsbt/files/diff.patch
+2022-08-21 22:26:09,881 INFO    Thread-12 :28696 [upload_job.py:push():138] Uploaded file /tmp/tmpbk6zub71wandb/1o2qi9xk-diff.patch
+2022-08-21 22:26:11,733 INFO    Thread-7  :28696 [dir_watcher.py:_on_file_modified():286] file/dir modified: /workspaces/UROP-Notes/src/wandb/run-20220821_222607-dqulhsbt/files/output.log
+2022-08-21 22:26:17,736 INFO    Thread-7  :28696 [dir_watcher.py:_on_file_modified():286] file/dir modified: /workspaces/UROP-Notes/src/wandb/run-20220821_222607-dqulhsbt/files/output.log
+2022-08-21 22:26:25,537 WARNING MainThread:28696 [internal.py:is_dead():387] Internal process exiting, parent pid 26967 disappeared
+2022-08-21 22:26:25,537 ERROR   MainThread:28696 [internal.py:wandb_internal():149] Internal process shutdown.
+2022-08-21 22:26:26,157 INFO    WriterThread:28696 [datastore.py:close():279] close: /workspaces/UROP-Notes/src/wandb/run-20220821_222607-dqulhsbt/run-dqulhsbt.wandb
+2022-08-21 22:26:26,158 INFO    SenderThread:28696 [sender.py:finish():1114] shutting down sender
+2022-08-21 22:26:26,158 INFO    SenderThread:28696 [dir_watcher.py:finish():353] shutting down directory watcher
+2022-08-21 22:26:26,166 INFO    HandlerThread:28696 [handler.py:finish():806] shutting down handler
+2022-08-21 22:26:26,739 INFO    SenderThread:28696 [dir_watcher.py:finish():383] scan: /workspaces/UROP-Notes/src/wandb/run-20220821_222607-dqulhsbt/files
+2022-08-21 22:26:26,739 INFO    SenderThread:28696 [dir_watcher.py:finish():397] scan save: /workspaces/UROP-Notes/src/wandb/run-20220821_222607-dqulhsbt/files/output.log output.log
+2022-08-21 22:26:26,739 INFO    SenderThread:28696 [dir_watcher.py:finish():397] scan save: /workspaces/UROP-Notes/src/wandb/run-20220821_222607-dqulhsbt/files/wandb-metadata.json wandb-metadata.json
+2022-08-21 22:26:26,740 INFO    SenderThread:28696 [dir_watcher.py:finish():397] scan save: /workspaces/UROP-Notes/src/wandb/run-20220821_222607-dqulhsbt/files/requirements.txt requirements.txt
+2022-08-21 22:26:26,740 INFO    SenderThread:28696 [dir_watcher.py:finish():397] scan save: /workspaces/UROP-Notes/src/wandb/run-20220821_222607-dqulhsbt/files/config.yaml config.yaml
+2022-08-21 22:26:26,744 INFO    SenderThread:28696 [dir_watcher.py:finish():397] scan save: /workspaces/UROP-Notes/src/wandb/run-20220821_222607-dqulhsbt/files/wandb-summary.json wandb-summary.json
+2022-08-21 22:26:26,751 INFO    SenderThread:28696 [dir_watcher.py:finish():397] scan save: /workspaces/UROP-Notes/src/wandb/run-20220821_222607-dqulhsbt/files/diff.patch diff.patch
+2022-08-21 22:26:26,751 INFO    SenderThread:28696 [file_pusher.py:finish():171] shutting down file pusher
+2022-08-21 22:26:26,754 INFO    SenderThread:28696 [file_pusher.py:join():176] waiting for file pusher
+2022-08-21 22:26:27,229 INFO    Thread-16 :28696 [upload_job.py:push():138] Uploaded file /workspaces/UROP-Notes/src/wandb/run-20220821_222607-dqulhsbt/files/wandb-summary.json
+2022-08-21 22:26:27,240 INFO    Thread-14 :28696 [upload_job.py:push():138] Uploaded file /workspaces/UROP-Notes/src/wandb/run-20220821_222607-dqulhsbt/files/requirements.txt
+2022-08-21 22:26:27,257 INFO    Thread-15 :28696 [upload_job.py:push():138] Uploaded file /workspaces/UROP-Notes/src/wandb/run-20220821_222607-dqulhsbt/files/config.yaml
+2022-08-21 22:26:27,280 INFO    Thread-13 :28696 [upload_job.py:push():138] Uploaded file /workspaces/UROP-Notes/src/wandb/run-20220821_222607-dqulhsbt/files/output.log
+2022-08-21 22:26:27,880 INFO    MainThread:28696 [internal.py:handle_exit():80] Internal process exited

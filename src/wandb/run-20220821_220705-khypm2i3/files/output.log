@@ -1,0 +1,21 @@
+Compiling model...
+Building feed-forward neural network...
+'build' took 0.149257 s
+'compile' took 0.853724 s
+Initializing variables...
+Training model...
+Step      Train loss                        Test loss                         Test metric
+0         [2.90e-02, 8.27e-01, 9.26e-03]    [2.90e-02, 8.27e-01, 9.26e-03]    []
+/opt/python/3.10.4/lib/python3.10/site-packages/skopt/sampler/sobol.py:246: UserWarning: The balance properties of Sobol' points require n to be a power of 2. 0 points have been previously generated, then: n=0+2002=2002.
+  warnings.warn("The balance properties of Sobol' points require "
+/opt/python/3.10.4/lib/python3.10/site-packages/deepxde/nn/tensorflow_compat_v1/fnn.py:103: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  return tf.layers.dense(
+1000      [3.82e-02, 9.76e-04, 7.14e-06]
+[34m[1mwandb[39m[22m: Ctrl + C detected. Stopping sweep.
+2000      [2.68e-03, 6.73e-06, 1.14e-05]
+Create sweep with ID: 1ihrjxb3
+Sweep URL: https://wandb.ai/raihaan123/PINNs/sweeps/1ihrjxb3
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.login() after wandb.init() has no effect.
+[34m[1mwandb[39m[22m: Agent Starting Run: uda9ir0l with config:
+[34m[1mwandb[39m[22m: 	depth: 13
+[34m[1mwandb[39m[22m: 	height: 23
