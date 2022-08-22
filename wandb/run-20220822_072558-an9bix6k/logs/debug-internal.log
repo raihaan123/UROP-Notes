@@ -1,0 +1,63 @@
+2022-08-22 07:25:59,014 INFO    MainThread:28970 [internal.py:wandb_internal():90] W&B internal server running at pid: 28970, started at: 2022-08-22 07:25:59.014192
+2022-08-22 07:25:59,017 INFO    WriterThread:28970 [datastore.py:open_for_write():75] open: /workspaces/UROP-Notes/wandb/run-20220822_072558-an9bix6k/run-an9bix6k.wandb
+2022-08-22 07:25:59,019 DEBUG   SenderThread:28970 [sender.py:send():236] send: header
+2022-08-22 07:25:59,019 DEBUG   SenderThread:28970 [sender.py:send():236] send: run
+2022-08-22 07:25:59,202 INFO    SenderThread:28970 [dir_watcher.py:__init__():216] watching files in: /workspaces/UROP-Notes/wandb/run-20220822_072558-an9bix6k/files
+2022-08-22 07:25:59,202 INFO    SenderThread:28970 [sender.py:_start_run_threads():815] run started: an9bix6k with start time 1661153158
+2022-08-22 07:25:59,202 DEBUG   HandlerThread:28970 [handler.py:handle_request():140] handle_request: check_version
+2022-08-22 07:25:59,202 DEBUG   SenderThread:28970 [sender.py:send():236] send: summary
+2022-08-22 07:25:59,203 INFO    SenderThread:28970 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-08-22 07:25:59,203 DEBUG   SenderThread:28970 [sender.py:send_request():250] send_request: check_version
+2022-08-22 07:25:59,234 DEBUG   HandlerThread:28970 [handler.py:handle_request():140] handle_request: run_start
+2022-08-22 07:25:59,235 DEBUG   HandlerThread:28970 [meta.py:__init__():35] meta init
+2022-08-22 07:25:59,235 DEBUG   HandlerThread:28970 [meta.py:__init__():49] meta init done
+2022-08-22 07:25:59,235 DEBUG   HandlerThread:28970 [meta.py:probe():209] probe
+2022-08-22 07:25:59,236 DEBUG   HandlerThread:28970 [meta.py:_setup_git():199] setup git
+2022-08-22 07:25:59,243 DEBUG   HandlerThread:28970 [meta.py:_setup_git():206] setup git done
+2022-08-22 07:25:59,243 DEBUG   HandlerThread:28970 [meta.py:_save_code():87] save code
+2022-08-22 07:25:59,245 DEBUG   HandlerThread:28970 [meta.py:_save_code():108] save code done
+2022-08-22 07:25:59,246 DEBUG   HandlerThread:28970 [meta.py:_save_patches():125] save patches
+2022-08-22 07:25:59,261 DEBUG   HandlerThread:28970 [meta.py:_save_patches():167] save patches done
+2022-08-22 07:25:59,261 DEBUG   HandlerThread:28970 [meta.py:_save_pip():53] save pip
+2022-08-22 07:25:59,262 DEBUG   HandlerThread:28970 [meta.py:_save_pip():67] save pip done
+2022-08-22 07:25:59,262 DEBUG   HandlerThread:28970 [meta.py:probe():247] probe done
+2022-08-22 07:25:59,292 DEBUG   SenderThread:28970 [sender.py:send():236] send: files
+2022-08-22 07:25:59,292 INFO    SenderThread:28970 [sender.py:_save_file():952] saving file wandb-metadata.json with policy now
+2022-08-22 07:25:59,292 INFO    SenderThread:28970 [sender.py:_save_file():952] saving file code/src/runner.py with policy now
+2022-08-22 07:25:59,301 DEBUG   HandlerThread:28970 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-22 07:25:59,302 DEBUG   SenderThread:28970 [sender.py:send_request():250] send_request: stop_status
+2022-08-22 07:25:59,433 DEBUG   SenderThread:28970 [sender.py:send():236] send: telemetry
+2022-08-22 07:25:59,770 INFO    Thread-12 :28970 [upload_job.py:push():138] Uploaded file /tmp/tmpg_46k7l4wandb/191hm5vd-code/src/runner.py
+2022-08-22 07:25:59,777 INFO    Thread-11 :28970 [upload_job.py:push():138] Uploaded file /tmp/tmpg_46k7l4wandb/2zxwsq36-wandb-metadata.json
+2022-08-22 07:26:00,203 INFO    Thread-7  :28970 [dir_watcher.py:_on_file_created():269] file/dir created: /workspaces/UROP-Notes/wandb/run-20220822_072558-an9bix6k/files/requirements.txt
+2022-08-22 07:26:00,204 INFO    Thread-7  :28970 [dir_watcher.py:_on_file_created():269] file/dir created: /workspaces/UROP-Notes/wandb/run-20220822_072558-an9bix6k/files/wandb-summary.json
+2022-08-22 07:26:00,204 INFO    Thread-7  :28970 [dir_watcher.py:_on_file_created():269] file/dir created: /workspaces/UROP-Notes/wandb/run-20220822_072558-an9bix6k/files/output.log
+2022-08-22 07:26:00,204 INFO    Thread-7  :28970 [dir_watcher.py:_on_file_created():269] file/dir created: /workspaces/UROP-Notes/wandb/run-20220822_072558-an9bix6k/files/wandb-metadata.json
+2022-08-22 07:26:00,204 INFO    Thread-7  :28970 [dir_watcher.py:_on_file_created():269] file/dir created: /workspaces/UROP-Notes/wandb/run-20220822_072558-an9bix6k/files/code/src/runner.py
+2022-08-22 07:26:00,204 INFO    Thread-7  :28970 [dir_watcher.py:_on_file_created():269] file/dir created: /workspaces/UROP-Notes/wandb/run-20220822_072558-an9bix6k/files/code
+2022-08-22 07:26:00,204 INFO    Thread-7  :28970 [dir_watcher.py:_on_file_created():269] file/dir created: /workspaces/UROP-Notes/wandb/run-20220822_072558-an9bix6k/files/code/src
+2022-08-22 07:26:14,499 DEBUG   HandlerThread:28970 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-22 07:26:14,500 DEBUG   SenderThread:28970 [sender.py:send_request():250] send_request: stop_status
+2022-08-22 07:26:27,326 DEBUG   SenderThread:28970 [sender.py:send():236] send: stats
+2022-08-22 07:26:29,661 DEBUG   HandlerThread:28970 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-22 07:26:29,662 DEBUG   SenderThread:28970 [sender.py:send_request():250] send_request: stop_status
+2022-08-22 07:26:30,225 INFO    Thread-7  :28970 [dir_watcher.py:_on_file_modified():286] file/dir modified: /workspaces/UROP-Notes/wandb/run-20220822_072558-an9bix6k/files/config.yaml
+2022-08-22 07:26:40,055 WARNING MainThread:28970 [internal.py:is_dead():387] Internal process exiting, parent pid 25949 disappeared
+2022-08-22 07:26:40,055 ERROR   MainThread:28970 [internal.py:wandb_internal():149] Internal process shutdown.
+2022-08-22 07:26:40,334 INFO    WriterThread:28970 [datastore.py:close():279] close: /workspaces/UROP-Notes/wandb/run-20220822_072558-an9bix6k/run-an9bix6k.wandb
+2022-08-22 07:26:40,673 INFO    HandlerThread:28970 [handler.py:finish():806] shutting down handler
+2022-08-22 07:26:40,800 INFO    SenderThread:28970 [sender.py:finish():1114] shutting down sender
+2022-08-22 07:26:40,800 INFO    SenderThread:28970 [dir_watcher.py:finish():353] shutting down directory watcher
+2022-08-22 07:26:41,228 INFO    SenderThread:28970 [dir_watcher.py:finish():383] scan: /workspaces/UROP-Notes/wandb/run-20220822_072558-an9bix6k/files
+2022-08-22 07:26:41,228 INFO    SenderThread:28970 [dir_watcher.py:finish():397] scan save: /workspaces/UROP-Notes/wandb/run-20220822_072558-an9bix6k/files/output.log output.log
+2022-08-22 07:26:41,228 INFO    SenderThread:28970 [dir_watcher.py:finish():397] scan save: /workspaces/UROP-Notes/wandb/run-20220822_072558-an9bix6k/files/wandb-metadata.json wandb-metadata.json
+2022-08-22 07:26:41,228 INFO    SenderThread:28970 [dir_watcher.py:finish():397] scan save: /workspaces/UROP-Notes/wandb/run-20220822_072558-an9bix6k/files/requirements.txt requirements.txt
+2022-08-22 07:26:41,228 INFO    SenderThread:28970 [dir_watcher.py:finish():397] scan save: /workspaces/UROP-Notes/wandb/run-20220822_072558-an9bix6k/files/config.yaml config.yaml
+2022-08-22 07:26:41,229 INFO    SenderThread:28970 [dir_watcher.py:finish():397] scan save: /workspaces/UROP-Notes/wandb/run-20220822_072558-an9bix6k/files/wandb-summary.json wandb-summary.json
+2022-08-22 07:26:41,238 INFO    SenderThread:28970 [dir_watcher.py:finish():397] scan save: /workspaces/UROP-Notes/wandb/run-20220822_072558-an9bix6k/files/code/src/runner.py code/src/runner.py
+2022-08-22 07:26:41,239 INFO    SenderThread:28970 [file_pusher.py:finish():171] shutting down file pusher
+2022-08-22 07:26:41,239 INFO    SenderThread:28970 [file_pusher.py:join():176] waiting for file pusher
+2022-08-22 07:26:41,719 INFO    Thread-15 :28970 [upload_job.py:push():138] Uploaded file /workspaces/UROP-Notes/wandb/run-20220822_072558-an9bix6k/files/wandb-summary.json
+2022-08-22 07:26:41,747 INFO    Thread-13 :28970 [upload_job.py:push():138] Uploaded file /workspaces/UROP-Notes/wandb/run-20220822_072558-an9bix6k/files/requirements.txt
+2022-08-22 07:26:41,781 INFO    Thread-14 :28970 [upload_job.py:push():138] Uploaded file /workspaces/UROP-Notes/wandb/run-20220822_072558-an9bix6k/files/config.yaml
+2022-08-22 07:26:42,371 INFO    MainThread:28970 [internal.py:handle_exit():80] Internal process exited

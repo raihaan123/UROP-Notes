@@ -1,0 +1,149 @@
+2022-08-21 22:43:05,059 INFO    Thread-22 (_run_job):2614 [wandb_setup.py:_flush():76] Configure stats pid to 2614
+2022-08-21 22:43:05,059 INFO    Thread-22 (_run_job):2614 [wandb_setup.py:_flush():76] Loading settings from /home/codespace/.config/wandb/settings
+2022-08-21 22:43:05,059 INFO    Thread-22 (_run_job):2614 [wandb_setup.py:_flush():76] Loading settings from wandb/settings
+2022-08-21 22:43:05,059 INFO    Thread-22 (_run_job):2614 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'entity': 'raihaan123', 'project': 'PINNs', 'root_dir': '/workspaces/UROP-Notes', 'run_id': '2jgi4qpa', 'sweep_param_path': '/workspaces/UROP-Notes/wandb/sweep-jy42uwvz/config-2jgi4qpa.yaml', 'sweep_id': 'jy42uwvz'}
+2022-08-21 22:43:05,059 INFO    Thread-22 (_run_job):2614 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'src/runner.py', 'program': '/workspaces/UROP-Notes/src/runner.py'}
+2022-08-21 22:43:05,060 INFO    Thread-22 (_run_job):2614 [wandb_init.py:_log_setup():461] Logging user logs to /workspaces/UROP-Notes/wandb/run-20220821_224305-2jgi4qpa/logs/debug.log
+2022-08-21 22:43:05,060 INFO    Thread-22 (_run_job):2614 [wandb_init.py:_log_setup():462] Logging internal logs to /workspaces/UROP-Notes/wandb/run-20220821_224305-2jgi4qpa/logs/debug-internal.log
+2022-08-21 22:43:05,060 INFO    Thread-22 (_run_job):2614 [wandb_init.py:init():495] calling init triggers
+2022-08-21 22:43:05,060 INFO    Thread-22 (_run_job):2614 [wandb_init.py:init():498] wandb.init called with sweep_config: {'depth': 50, 'height': 42, 'num_domain': 1200}
+config: {}
+2022-08-21 22:43:05,060 INFO    Thread-22 (_run_job):2614 [wandb_init.py:init():548] starting backend
+2022-08-21 22:43:05,060 INFO    Thread-22 (_run_job):2614 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-08-21 22:43:05,064 INFO    Thread-22 (_run_job):2614 [backend.py:ensure_launched():217] starting backend process...
+2022-08-21 22:43:05,065 INFO    Thread-22 (_run_job):2614 [backend.py:ensure_launched():222] started backend process with pid: 5490
+2022-08-21 22:43:05,066 INFO    Thread-22 (_run_job):2614 [wandb_init.py:init():558] backend started and connected
+2022-08-21 22:43:05,072 INFO    Thread-22 (_run_job):2614 [wandb_run.py:_config_callback():1131] config_cb None None {'depth': 50, 'height': 42, 'num_domain': 1200}
+2022-08-21 22:43:05,074 INFO    Thread-22 (_run_job):2614 [wandb_init.py:init():634] updated telemetry
+2022-08-21 22:43:05,080 INFO    Thread-22 (_run_job):2614 [wandb_init.py:init():665] communicating run to backend with 30 second timeout
+2022-08-21 22:43:06,195 INFO    Thread-22 (_run_job):2614 [wandb_run.py:_on_init():1919] communicating current version
+2022-08-21 22:43:06,228 INFO    Thread-22 (_run_job):2614 [wandb_run.py:_on_init():1923] got version response upgrade_message: "wandb version 0.13.1 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2022-08-21 22:43:06,228 INFO    Thread-22 (_run_job):2614 [wandb_init.py:init():700] starting run threads in backend
+2022-08-21 22:43:06,305 INFO    Thread-22 (_run_job):2614 [wandb_run.py:_console_start():1893] atexit reg
+2022-08-21 22:43:06,306 INFO    Thread-22 (_run_job):2614 [wandb_run.py:_redirect():1766] redirect: SettingsConsole.REDIRECT
+2022-08-21 22:43:06,306 INFO    Thread-22 (_run_job):2614 [wandb_run.py:_redirect():1771] Redirecting console.
+2022-08-21 22:43:06,307 ERROR   Thread-22 (_run_job):2614 [wandb_run.py:_redirect():1830] Failed to redirect.
+Traceback (most recent call last):
+  File "/opt/python/3.10.4/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1823, in _redirect
+    out_redir.install()
+  File "/opt/python/3.10.4/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 702, in install
+    _WSCH.add_fd(self._pipe_read_fd)
+  File "/opt/python/3.10.4/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 652, in add_fd
+    self._register()
+  File "/opt/python/3.10.4/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 637, in _register
+    old_handler = signal.signal(signal.SIGWINCH, lambda *_: None)
+  File "/opt/python/3.10.4/lib/python3.10/signal.py", line 56, in signal
+    handler = _signal.signal(_enum_to_int(signalnum), _enum_to_int(handler))
+ValueError: signal only works in main thread of the main interpreter
+2022-08-21 22:43:06,307 INFO    Thread-22 (_run_job):2614 [wandb_init.py:init():732] run started, returning control to user process
+2022-08-21 22:46:27,249 INFO    Thread-22 (_run_job):2614 [wandb_run.py:_finish():1680] finishing run raihaan123/PINNs/2jgi4qpa
+2022-08-21 22:46:27,269 INFO    Thread-22 (_run_job):2614 [wandb_run.py:_atexit_cleanup():1862] got exitcode: 0
+2022-08-21 22:46:27,270 INFO    Thread-22 (_run_job):2614 [wandb_run.py:_restore():1834] restore
+2022-08-21 22:46:27,273 INFO    Thread-22 (_run_job):2614 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 4011
+  total_bytes: 4011
+}
+
+2022-08-21 22:46:27,466 INFO    Thread-22 (_run_job):2614 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 4011
+  total_bytes: 4011
+}
+
+2022-08-21 22:46:28,335 INFO    Thread-22 (_run_job):2614 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 4
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 4011
+  total_bytes: 7083
+}
+
+2022-08-21 22:46:28,438 INFO    Thread-22 (_run_job):2614 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 4
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 4011
+  total_bytes: 7083
+}
+
+2022-08-21 22:46:28,541 INFO    Thread-22 (_run_job):2614 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 4
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 7083
+  total_bytes: 7083
+}
+
+2022-08-21 22:46:28,643 INFO    Thread-22 (_run_job):2614 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 4
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 7083
+  total_bytes: 7083
+}
+
+2022-08-21 22:46:28,745 INFO    Thread-22 (_run_job):2614 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 4
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 7083
+  total_bytes: 7083
+}
+
+2022-08-21 22:46:28,847 INFO    Thread-22 (_run_job):2614 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 4
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 7083
+  total_bytes: 7083
+}
+
+2022-08-21 22:46:28,949 INFO    Thread-22 (_run_job):2614 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 4
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 7083
+  total_bytes: 7083
+}
+
+2022-08-21 22:46:29,396 INFO    Thread-22 (_run_job):2614 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 4
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 7083
+  total_bytes: 7083
+}
+
+2022-08-21 22:46:29,756 INFO    Thread-22 (_run_job):2614 [wandb_run.py:_on_finish():1991] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 4
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 7083
+  total_bytes: 7083
+}
+local_info {
+}
+
+2022-08-21 22:46:30,927 INFO    Thread-22 (_run_job):2614 [wandb_run.py:_footer_history_summary_info():3099] rendering history
+2022-08-21 22:46:30,927 INFO    Thread-22 (_run_job):2614 [wandb_run.py:_footer_history_summary_info():3131] rendering summary
+2022-08-21 22:46:30,939 INFO    Thread-22 (_run_job):2614 [wandb_run.py:_footer_sync_info():3055] logging synced files
