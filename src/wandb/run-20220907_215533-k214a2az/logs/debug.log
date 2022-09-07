@@ -1,0 +1,487 @@
+2022-09-07 21:55:33,616 INFO    Thread-71 :13204 [wandb_setup.py:_flush():76] Configure stats pid to 13204
+2022-09-07 21:55:33,616 INFO    Thread-71 :13204 [wandb_setup.py:_flush():76] Loading settings from C:\Users\raiha\.config\wandb\settings
+2022-09-07 21:55:33,617 INFO    Thread-71 :13204 [wandb_setup.py:_flush():76] Loading settings from wandb\settings
+2022-09-07 21:55:33,617 INFO    Thread-71 :13204 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'_require_service': 'True', 'entity': 'raihaan123', 'project': 'PINNs', 'root_dir': 'C:\\GitHub\\UROP-Notes\\src', 'run_id': 'k214a2az', 'sweep_param_path': 'C:\\GitHub\\UROP-Notes\\src\\wandb\\sweep-qq8viv43\\config-k214a2az.yaml', 'sweep_id': 'qq8viv43'}
+2022-09-07 21:55:33,619 INFO    Thread-71 :13204 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'src\\runner.py', 'program': 'c:/GitHub/UROP-Notes/src/runner.py'}
+2022-09-07 21:55:33,620 INFO    Thread-71 :13204 [wandb_init.py:_log_setup():461] Logging user logs to C:\GitHub\UROP-Notes\src\wandb\run-20220907_215533-k214a2az\logs\debug.log
+2022-09-07 21:55:33,620 INFO    Thread-71 :13204 [wandb_init.py:_log_setup():462] Logging internal logs to C:\GitHub\UROP-Notes\src\wandb\run-20220907_215533-k214a2az\logs\debug-internal.log
+2022-09-07 21:55:33,620 INFO    Thread-71 :13204 [wandb_init.py:init():495] calling init triggers
+2022-09-07 21:55:33,620 INFO    Thread-71 :13204 [wandb_init.py:init():499] wandb.init called with sweep_config: {'depth': 20, 'height': 67, 'num_domain': 1200}
+config: {}
+2022-09-07 21:55:33,621 INFO    Thread-71 :13204 [wandb_init.py:init():548] starting backend
+2022-09-07 21:55:33,621 INFO    Thread-71 :13204 [wandb_init.py:init():552] setting up manager
+2022-09-07 21:55:33,637 INFO    Thread-71 :13204 [backend.py:_multiprocessing_setup():99] multiprocessing start_methods=spawn, using: spawn
+2022-09-07 21:55:33,653 INFO    Thread-71 :13204 [wandb_init.py:init():558] backend started and connected
+2022-09-07 21:55:33,671 INFO    Thread-71 :13204 [wandb_run.py:_config_callback():1152] config_cb None None {'depth': 20, 'height': 67, 'num_domain': 1200}
+2022-09-07 21:55:33,673 INFO    Thread-71 :13204 [wandb_init.py:init():636] updated telemetry
+2022-09-07 21:55:34,444 INFO    Thread-71 :13204 [wandb_init.py:init():668] communicating run to backend with 30 second timeout
+2022-09-07 21:55:34,837 INFO    Thread-71 :13204 [wandb_run.py:_on_init():1982] communicating current version
+2022-09-07 21:55:34,943 INFO    Thread-71 :13204 [wandb_run.py:_on_init():1986] got version response 
+2022-09-07 21:55:34,943 INFO    Thread-71 :13204 [wandb_init.py:init():700] starting run threads in backend
+2022-09-07 21:55:36,195 INFO    Thread-71 :13204 [wandb_run.py:_console_start():1962] atexit reg
+2022-09-07 21:55:36,195 INFO    Thread-71 :13204 [wandb_run.py:_redirect():1820] redirect: SettingsConsole.WRAP_RAW
+2022-09-07 21:55:36,195 INFO    Thread-71 :13204 [wandb_run.py:_redirect():1885] Wrapping output streams.
+2022-09-07 21:55:36,196 INFO    Thread-71 :13204 [wandb_run.py:_redirect():1907] Redirects installed.
+2022-09-07 21:55:36,197 INFO    Thread-71 :13204 [wandb_init.py:init():732] run started, returning control to user process
+2022-09-07 21:55:51,955 INFO    Thread-71 :13204 [wandb_run.py:_finish():1728] finishing run raihaan123/PINNs/k214a2az
+2022-09-07 21:55:51,956 INFO    Thread-71 :13204 [wandb_run.py:_atexit_cleanup():1931] got exitcode: 0
+2022-09-07 21:55:51,956 INFO    Thread-71 :13204 [wandb_run.py:_restore():1914] restore
+2022-09-07 21:55:51,957 INFO    Thread-71 :13204 [wandb_run.py:_restore():1920] restore done
+2022-09-07 21:55:51,977 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 2
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 20095
+  total_bytes: 20095
+}
+
+2022-09-07 21:55:52,269 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 2
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 20095
+  total_bytes: 20095
+}
+
+2022-09-07 21:55:52,730 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 2
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 20095
+  total_bytes: 20095
+}
+
+2022-09-07 21:55:53,048 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 20095
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:53,152 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 20095
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:53,262 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:53,373 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:53,482 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:53,593 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:53,704 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:53,814 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:53,925 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:54,034 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:54,145 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:54,254 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:54,363 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:54,472 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:54,580 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:54,690 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:54,802 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:54,912 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:55,021 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:55,129 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:55,238 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:55,349 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:55,460 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:55,574 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:55,682 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:55,791 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:55,901 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:56,015 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:56,122 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:56,238 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:56,360 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:56,470 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:56,582 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:56,692 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:56,802 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:56,913 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:57,021 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:57,130 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:57,237 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:57,346 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 21347
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:57,456 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 25158
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:57,567 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 25158
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:57,676 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 25158
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:57,790 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 25158
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:57,896 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 25158
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:58,072 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 25158
+  total_bytes: 25158
+}
+
+2022-09-07 21:55:58,511 INFO    Thread-71 :13204 [wandb_run.py:_on_finish():2221] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 25158
+  total_bytes: 25158
+}
+local_info {
+}
+
+2022-09-07 21:55:59,643 INFO    Thread-71 :13204 [wandb_run.py:_footer_history_summary_info():3305] rendering history
+2022-09-07 21:55:59,643 INFO    Thread-71 :13204 [wandb_run.py:_footer_history_summary_info():3337] rendering summary
+2022-09-07 21:55:59,654 INFO    Thread-71 :13204 [wandb_run.py:_footer_sync_info():3261] logging synced files

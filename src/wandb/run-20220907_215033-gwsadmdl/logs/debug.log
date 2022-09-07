@@ -1,0 +1,144 @@
+2022-09-07 21:50:33,222 INFO    Thread-15 :16940 [wandb_setup.py:_flush():76] Configure stats pid to 16940
+2022-09-07 21:50:33,222 INFO    Thread-15 :16940 [wandb_setup.py:_flush():76] Loading settings from C:\Users\raiha\.config\wandb\settings
+2022-09-07 21:50:33,222 INFO    Thread-15 :16940 [wandb_setup.py:_flush():76] Loading settings from wandb\settings
+2022-09-07 21:50:33,222 INFO    Thread-15 :16940 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'_require_service': 'True', 'entity': 'raihaan123', 'project': 'PINNs', 'root_dir': 'C:\\GitHub\\UROP-Notes\\src', 'run_id': 'gwsadmdl', 'sweep_param_path': 'C:\\GitHub\\UROP-Notes\\src\\wandb\\sweep-pq709sbf\\config-gwsadmdl.yaml', 'sweep_id': 'pq709sbf'}
+2022-09-07 21:50:33,223 INFO    Thread-15 :16940 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'src\\runner.py', 'program': 'c:/GitHub/UROP-Notes/src/runner.py'}
+2022-09-07 21:50:33,223 INFO    Thread-15 :16940 [wandb_init.py:_log_setup():461] Logging user logs to C:\GitHub\UROP-Notes\src\wandb\run-20220907_215033-gwsadmdl\logs\debug.log
+2022-09-07 21:50:33,223 INFO    Thread-15 :16940 [wandb_init.py:_log_setup():462] Logging internal logs to C:\GitHub\UROP-Notes\src\wandb\run-20220907_215033-gwsadmdl\logs\debug-internal.log
+2022-09-07 21:50:33,223 INFO    Thread-15 :16940 [wandb_init.py:init():495] calling init triggers
+2022-09-07 21:50:33,223 INFO    Thread-15 :16940 [wandb_init.py:init():499] wandb.init called with sweep_config: {'depth': 26, 'height': 59, 'num_domain': 1600}
+config: {}
+2022-09-07 21:50:33,223 INFO    Thread-15 :16940 [wandb_init.py:init():548] starting backend
+2022-09-07 21:50:33,223 INFO    Thread-15 :16940 [wandb_init.py:init():552] setting up manager
+2022-09-07 21:50:33,242 INFO    Thread-15 :16940 [backend.py:_multiprocessing_setup():99] multiprocessing start_methods=spawn, using: spawn
+2022-09-07 21:50:33,251 INFO    Thread-15 :16940 [wandb_init.py:init():558] backend started and connected
+2022-09-07 21:50:33,271 INFO    Thread-15 :16940 [wandb_run.py:_config_callback():1152] config_cb None None {'depth': 26, 'height': 59, 'num_domain': 1600}
+2022-09-07 21:50:33,271 INFO    Thread-15 :16940 [wandb_init.py:init():636] updated telemetry
+2022-09-07 21:50:33,561 INFO    Thread-15 :16940 [wandb_init.py:init():668] communicating run to backend with 30 second timeout
+2022-09-07 21:50:33,945 INFO    Thread-15 :16940 [wandb_run.py:_on_init():1982] communicating current version
+2022-09-07 21:50:34,024 INFO    Thread-15 :16940 [wandb_run.py:_on_init():1986] got version response 
+2022-09-07 21:50:34,024 INFO    Thread-15 :16940 [wandb_init.py:init():700] starting run threads in backend
+2022-09-07 21:50:35,181 INFO    Thread-15 :16940 [wandb_run.py:_console_start():1962] atexit reg
+2022-09-07 21:50:35,182 INFO    Thread-15 :16940 [wandb_run.py:_redirect():1820] redirect: SettingsConsole.WRAP_RAW
+2022-09-07 21:50:35,182 INFO    Thread-15 :16940 [wandb_run.py:_redirect():1885] Wrapping output streams.
+2022-09-07 21:50:35,182 INFO    Thread-15 :16940 [wandb_run.py:_redirect():1907] Redirects installed.
+2022-09-07 21:50:35,183 INFO    Thread-15 :16940 [wandb_init.py:init():732] run started, returning control to user process
+2022-09-07 21:50:35,215 INFO    Thread-15 :16940 [wandb_run.py:_finish():1728] finishing run raihaan123/PINNs/gwsadmdl
+2022-09-07 21:50:35,216 INFO    Thread-15 :16940 [wandb_run.py:_atexit_cleanup():1931] got exitcode: 1
+2022-09-07 21:50:35,216 INFO    Thread-15 :16940 [wandb_run.py:_restore():1914] restore
+2022-09-07 21:50:35,216 INFO    Thread-15 :16940 [wandb_run.py:_restore():1920] restore done
+2022-09-07 21:50:35,454 INFO    Thread-15 :16940 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 2
+  other_count: 1
+}
+pusher_stats {
+  total_bytes: 20083
+}
+
+2022-09-07 21:50:35,712 INFO    Thread-15 :16940 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 2
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 20083
+  total_bytes: 20083
+}
+
+2022-09-07 21:50:37,455 INFO    Thread-15 :16940 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 2
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 20083
+  total_bytes: 20083
+}
+
+2022-09-07 21:50:37,995 INFO    Thread-15 :16940 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 20083
+  total_bytes: 24579
+}
+
+2022-09-07 21:50:38,113 INFO    Thread-15 :16940 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 20083
+  total_bytes: 24579
+}
+
+2022-09-07 21:50:38,235 INFO    Thread-15 :16940 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 20083
+  total_bytes: 24579
+}
+
+2022-09-07 21:50:38,349 INFO    Thread-15 :16940 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 24579
+  total_bytes: 24579
+}
+
+2022-09-07 21:50:38,461 INFO    Thread-15 :16940 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 24579
+  total_bytes: 24579
+}
+
+2022-09-07 21:50:38,614 INFO    Thread-15 :16940 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 24579
+  total_bytes: 24579
+}
+
+2022-09-07 21:50:38,731 INFO    Thread-15 :16940 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 24579
+  total_bytes: 24579
+}
+
+2022-09-07 21:50:38,986 INFO    Thread-15 :16940 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 24579
+  total_bytes: 24579
+}
+
+2022-09-07 21:50:39,427 INFO    Thread-15 :16940 [wandb_run.py:_on_finish():2221] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 24579
+  total_bytes: 24579
+}
+local_info {
+}
+
+2022-09-07 21:50:40,561 INFO    Thread-15 :16940 [wandb_run.py:_footer_history_summary_info():3305] rendering history
+2022-09-07 21:50:40,562 INFO    Thread-15 :16940 [wandb_run.py:_footer_history_summary_info():3337] rendering summary
+2022-09-07 21:50:40,569 INFO    Thread-15 :16940 [wandb_run.py:_footer_sync_info():3261] logging synced files

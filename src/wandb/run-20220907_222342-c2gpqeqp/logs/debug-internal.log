@@ -1,0 +1,5 @@
+2022-09-07 22:23:42,056 INFO    StreamThr :17252 [internal.py:wandb_internal():93] W&B internal server running at pid: 17252, started at: 2022-09-07 22:23:42.055691
+2022-09-07 22:23:42,060 DEBUG   HandlerThread:17252 [handler.py:handle_request():141] handle_request: status
+2022-09-07 22:23:42,065 DEBUG   SenderThread:17252 [sender.py:send_request():316] send_request: status
+2022-09-07 22:23:42,075 DEBUG   SenderThread:17252 [sender.py:send():302] send: header
+2022-09-07 22:23:42,076 INFO    WriterThread:17252 [datastore.py:open_for_write():75] open: C:\GitHub\UROP-Notes\src\wandb\run-20220907_222342-c2gpqeqp\run-c2gpqeqp.wandb

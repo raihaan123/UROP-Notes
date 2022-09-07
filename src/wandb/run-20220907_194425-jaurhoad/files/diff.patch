@@ -1,0 +1,274 @@
+diff --git a/.obsidian/appearance.json b/.obsidian/appearance.json
+index e0218d9..2e4627b 100644
+--- a/.obsidian/appearance.json
++++ b/.obsidian/appearance.json
+@@ -1,5 +1,5 @@
+ {
+   "cssTheme": "Hipstersmoothie",
+   "translucency": true,
+-  "baseFontSize": 19
++  "baseFontSize": 14
+ }
+\ No newline at end of file
+diff --git a/.obsidian/workspace b/.obsidian/workspace
+index 02be3f9..cf5f2cf 100644
+--- a/.obsidian/workspace
++++ b/.obsidian/workspace
+@@ -4,24 +4,12 @@
+     "type": "split",
+     "children": [
+       {
+-        "id": "85de84098c16a0bd",
++        "id": "a6dcb478ad1f6a6c",
+         "type": "leaf",
+         "state": {
+           "type": "markdown",
+           "state": {
+-            "file": "UROP-Notes/Week Summaries/Week 3.md",
+-            "mode": "source",
+-            "source": false
+-          }
+-        }
+-      },
+-      {
+-        "id": "f3b1d3f0f772cd93",
+-        "type": "leaf",
+-        "state": {
+-          "type": "markdown",
+-          "state": {
+-            "file": "UROP-Notes/Theory/Van der Pol Oscillator.md",
++            "file": "UROP-Notes/Week Summaries/Week 5.md",
+             "mode": "preview",
+             "source": false
+           }
+@@ -65,16 +53,35 @@
+       }
+     ],
+     "direction": "horizontal",
+-    "width": 300,
+-    "collapsed": true
++    "width": 300
+   },
+   "right": {
+     "id": "f6bde7430f8ca632",
+     "type": "split",
+     "children": [
++      {
++        "id": "27b0fada172839c7",
++        "type": "tabs",
++        "dimension": 68.52331606217616,
++        "children": [
++          {
++            "id": "85de84098c16a0bd",
++            "type": "leaf",
++            "state": {
++              "type": "markdown",
++              "state": {
++                "file": "UROP-Notes/Launchpad.md",
++                "mode": "preview",
++                "source": false
++              }
++            }
++          }
++        ]
++      },
+       {
+         "id": "8d3001ce2035095c",
+         "type": "tabs",
++        "dimension": 31.476683937823836,
+         "children": [
+           {
+             "id": "f8e96f5f41134dfc",
+@@ -82,7 +89,7 @@
+             "state": {
+               "type": "localgraph",
+               "state": {
+-                "file": "UROP-Notes/Week Summaries/Week 3.md",
++                "file": "UROP-Notes/Week Summaries/Week 5.md",
+                 "options": {
+                   "collapse-filter": true,
+                   "search": "",
+@@ -105,7 +112,7 @@
+                   "repelStrength": 10,
+                   "linkStrength": 1,
+                   "linkDistance": 250,
+-                  "scale": 0.7798887840302817,
++                  "scale": 0.4788882052545201,
+                   "close": true
+                 }
+               }
+@@ -117,7 +124,7 @@
+             "state": {
+               "type": "backlink",
+               "state": {
+-                "file": "UROP-Notes/Week Summaries/Week 3.md",
++                "file": "UROP-Notes/Week Summaries/Week 5.md",
+                 "collapseAll": false,
+                 "extraContext": false,
+                 "sortOrder": "alphabetical",
+@@ -132,20 +139,19 @@
+       }
+     ],
+     "direction": "horizontal",
+-    "width": 300,
+-    "collapsed": true
++    "width": 300
+   },
+-  "active": "85de84098c16a0bd",
++  "active": "a6dcb478ad1f6a6c",
+   "lastOpenFiles": [
+-    "UROP-Notes/Theory/Van der Pol Oscillator.md",
++    "UROP-Notes/Week Summaries/Week 5.md",
++    "UROP-Notes/Week Summaries/Week 4.md",
+     "UROP-Notes/Week Summaries/Week 3.md",
+     "UROP-Notes/Week Summaries/Week 2.md",
+     "UROP-Notes/Week Summaries/Week 1.md",
+-    "UROP-Notes/Research Objectives.md",
+     "UROP-Notes/Launchpad.md",
++    "UROP-Notes/Theory/Van der Pol Oscillator.md",
++    "UROP-Notes/Research Objectives.md",
+     "UROP-Notes/Theory/PINNs.md",
+-    "IPython Notebooks/Figures/phase-portrait.png",
+-    "IPython Notebooks/numerical_solution.ipynb",
+-    "phase.md"
++    "IPython Notebooks/Figures/phase-portrait.png"
+   ]
+ }
+\ No newline at end of file
+diff --git a/src/deepxde.ipynb b/src/deepxde.ipynb
+index d995664..f8f51c0 100644
+--- a/src/deepxde.ipynb
++++ b/src/deepxde.ipynb
+@@ -17,43 +17,40 @@
+   },
+   {
+    "cell_type": "code",
+-   "execution_count": 1,
++   "execution_count": 2,
+    "metadata": {},
+    "outputs": [
+     {
+      "name": "stderr",
+      "output_type": "stream",
+      "text": [
++      "DeepXDE backend not selected or invalid. Use tensorflow.compat.v1.\n",
+       "Using backend: tensorflow.compat.v1\n",
+-      "\n",
+-      "2022-08-21 22:21:23.448689: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory\n",
+-      "2022-08-21 22:21:23.448787: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.\n"
++      "\n"
+      ]
+     },
+     {
+      "name": "stdout",
+      "output_type": "stream",
+      "text": [
+-      "WARNING:tensorflow:From /opt/python/3.10.4/lib/python3.10/site-packages/tensorflow/python/compat/v2_compat.py:107: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.\n",
+-      "Instructions for updating:\n",
+-      "non-resource variables are not supported in the long term\n"
++      "Setting the default backend to \"tensorflow.compat.v1\". You can change it in the ~/.deepxde/config.json file or export the DDE_BACKEND environment variable. Valid options are: tensorflow.compat.v1, tensorflow, pytorch, jax, paddle (all lowercase)\n"
+      ]
+     },
+     {
+-     "name": "stderr",
+-     "output_type": "stream",
+-     "text": [
+-      "2022-08-21 22:21:35.442440: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory\n",
+-      "2022-08-21 22:21:35.442486: W tensorflow/stream_executor/cuda/cuda_driver.cc:269] failed call to cuInit: UNKNOWN ERROR (303)\n",
+-      "2022-08-21 22:21:35.442514: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (codespaces-baf76a): /proc/driver/nvidia/version does not exist\n"
+-     ]
+-    },
+-    {
+-     "name": "stdout",
+-     "output_type": "stream",
+-     "text": [
+-      "WARNING:tensorflow:From /opt/python/3.10.4/lib/python3.10/site-packages/deepxde/nn/initializers.py:118: The name tf.keras.initializers.he_normal is deprecated. Please use tf.compat.v1.keras.initializers.he_normal instead.\n",
+-      "\n"
++     "ename": "ModuleNotFoundError",
++     "evalue": "No module named 'tensorflow'",
++     "output_type": "error",
++     "traceback": [
++      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
++      "\u001b[1;31mModuleNotFoundError\u001b[0m                       Traceback (most recent call last)",
++      "\u001b[1;32m<ipython-input-2-24a1a7354082>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[1;32m----> 1\u001b[1;33m \u001b[1;32mimport\u001b[0m  \u001b[0mdeepxde\u001b[0m \u001b[1;32mas\u001b[0m \u001b[0mdde\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m      2\u001b[0m \u001b[1;32mfrom\u001b[0m    \u001b[0mdeepxde\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mbackend\u001b[0m \u001b[1;32mimport\u001b[0m \u001b[0mtf\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      3\u001b[0m \u001b[1;32mimport\u001b[0m  \u001b[0mnumpy\u001b[0m \u001b[1;32mas\u001b[0m \u001b[0mnp\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      4\u001b[0m \u001b[1;32mimport\u001b[0m  \u001b[0mmatplotlib\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mpyplot\u001b[0m \u001b[1;32mas\u001b[0m \u001b[0mplt\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      5\u001b[0m \u001b[1;32mfrom\u001b[0m    \u001b[0mscipy\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mintegrate\u001b[0m \u001b[1;32mimport\u001b[0m \u001b[0modeint\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
++      "\u001b[1;32m~\\Anaconda3\\lib\\site-packages\\deepxde\\__init__.py\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m     15\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     16\u001b[0m \u001b[1;31m# Should import backend before importing anything else\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m---> 17\u001b[1;33m \u001b[1;32mfrom\u001b[0m \u001b[1;33m.\u001b[0m \u001b[1;32mimport\u001b[0m \u001b[0mbackend\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m     18\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     19\u001b[0m \u001b[1;32mfrom\u001b[0m \u001b[1;33m.\u001b[0m \u001b[1;32mimport\u001b[0m \u001b[0mcallbacks\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
++      "\u001b[1;32m~\\Anaconda3\\lib\\site-packages\\deepxde\\backend\\__init__.py\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m     98\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     99\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m--> 100\u001b[1;33m \u001b[0mload_backend\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mget_preferred_backend\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m    101\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    102\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n",
++      "\u001b[1;32m~\\Anaconda3\\lib\\site-packages\\deepxde\\backend\\__init__.py\u001b[0m in \u001b[0;36mload_backend\u001b[1;34m(mod_name)\u001b[0m\n\u001b[0;32m     34\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     35\u001b[0m     \u001b[0mprint\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m\"Using backend: %s\\n\"\u001b[0m \u001b[1;33m%\u001b[0m \u001b[0mmod_name\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mfile\u001b[0m\u001b[1;33m=\u001b[0m\u001b[0msys\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mstderr\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mflush\u001b[0m\u001b[1;33m=\u001b[0m\u001b[1;32mTrue\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m---> 36\u001b[1;33m     \u001b[0mmod\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mimportlib\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mimport_module\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m\".%s\"\u001b[0m \u001b[1;33m%\u001b[0m \u001b[0mmod_name\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mreplace\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m\".\"\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;34m\"_\"\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0m__name__\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m     37\u001b[0m     \u001b[0mthismod\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0msys\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mmodules\u001b[0m\u001b[1;33m[\u001b[0m\u001b[0m__name__\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     38\u001b[0m     \u001b[1;31m# log backend name\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
++      "\u001b[1;32m~\\Anaconda3\\lib\\importlib\\__init__.py\u001b[0m in \u001b[0;36mimport_module\u001b[1;34m(name, package)\u001b[0m\n\u001b[0;32m    125\u001b[0m                 \u001b[1;32mbreak\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    126\u001b[0m             \u001b[0mlevel\u001b[0m \u001b[1;33m+=\u001b[0m \u001b[1;36m1\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m--> 127\u001b[1;33m     \u001b[1;32mreturn\u001b[0m \u001b[0m_bootstrap\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0m_gcd_import\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mname\u001b[0m\u001b[1;33m[\u001b[0m\u001b[0mlevel\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mpackage\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mlevel\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m    128\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    129\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n",
++      "\u001b[1;32m~\\Anaconda3\\lib\\site-packages\\deepxde\\backend\\tensorflow_compat_v1\\__init__.py\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m      3\u001b[0m \u001b[0mos\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0menviron\u001b[0m\u001b[1;33m[\u001b[0m\u001b[1;34m\"TF_FORCE_GPU_ALLOW_GROWTH\"\u001b[0m\u001b[1;33m]\u001b[0m \u001b[1;33m=\u001b[0m \u001b[1;34m\"true\"\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      4\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m----> 5\u001b[1;33m \u001b[1;32mfrom\u001b[0m \u001b[1;33m.\u001b[0m\u001b[0mtensor\u001b[0m \u001b[1;32mimport\u001b[0m \u001b[1;33m*\u001b[0m  \u001b[1;31m# pylint: disable=redefined-builtin\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m",
++      "\u001b[1;32m~\\Anaconda3\\lib\\site-packages\\deepxde\\backend\\tensorflow_compat_v1\\tensor.py\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m      2\u001b[0m \u001b[1;32mfrom\u001b[0m \u001b[0mdistutils\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mversion\u001b[0m \u001b[1;32mimport\u001b[0m \u001b[0mLooseVersion\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      3\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m----> 4\u001b[1;33m \u001b[1;32mimport\u001b[0m \u001b[0mtensorflow\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mcompat\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mv1\u001b[0m \u001b[1;32mas\u001b[0m \u001b[0mtf\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m      5\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      6\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n",
++      "\u001b[1;31mModuleNotFoundError\u001b[0m: No module named 'tensorflow'"
+      ]
+     }
+    ],
+@@ -843,7 +840,7 @@
+  ],
+  "metadata": {
+   "kernelspec": {
+-   "display_name": "Python 3.10.4 64-bit",
++   "display_name": "Python 3",
+    "language": "python",
+    "name": "python3"
+   },
+@@ -857,9 +854,8 @@
+    "name": "python",
+    "nbconvert_exporter": "python",
+    "pygments_lexer": "ipython3",
+-   "version": "3.10.4"
++   "version": "3.7.4"
+   },
+-  "orig_nbformat": 4,
+   "vscode": {
+    "interpreter": {
+     "hash": "4f946df053fbf2b937619d3c5458e7af74262f9a954d8797ba0b27400bcafe06"
+@@ -867,5 +863,5 @@
+   }
+  },
+  "nbformat": 4,
+- "nbformat_minor": 2
++ "nbformat_minor": 4
+ }
+diff --git a/src/runner.py b/src/runner.py
+index b38c93a..fc46a6a 100644
+--- a/src/runner.py
++++ b/src/runner.py
+@@ -25,7 +25,7 @@ sweep_id = wandb.sweep(sweep_config, project="PINNs", entity="raihaan123")
+ 
+ 
+ # PDE parameters
+-mu = 2
++mu = 0
+ X0 = [1, 0]
+ t_f = 20
+ 
+@@ -39,9 +39,15 @@ true_sol    = lambda t:     odeint(ODE, X0, t)
+ 
+ # The PDE problem
+ def VdP(t, y):
++    p = y[:, 0:1]
++    v = y[:, 1:2]
++
++
++
+     dy_dt = dde.grad.jacobian(y, t)
+     d2y_dt2 = dde.grad.hessian(y, t)
+-    return  d2y_dt2 - mu * (1 - y ** 2) * dy_dt + y
++    return  [d2y_dt2 - mu * (1 - y ** 2) * dy_dt + y,
++             d2y_dt2 - mu * (1 - y ** 2) * dy_dt + y]
+ 
+ # Time domain definition
+ geom = dde.geometry.TimeDomain(0, t_f)
+@@ -68,11 +74,11 @@ def train():
+         data = dde.data.TimePDE(geom, VdP, [ic1, ic2], config["num_domain"], 2, num_test=50000)
+ 
+         # Solver architecture
+-        layer_size = [1] + [config["height"]] * config["depth"] + [1]
++        layer_size = [1] + [config["height"]] * config["depth"] + [3]
+         # layer_size = [1] + [10]*2 + [2]*2 + [10]*2 + [1]          # Fun experiment! Does there exist a linear coordinate frame for the ODE?
+         activation = "tanh"
+         initializer = "Glorot uniform"
+-        net = dde.nn.FNN(layer_size, activation, initializer)
++        net = dde.nn.FNN(layer_size, activation, initializer, regularization="L2", dropout=0.1)
+ 
+         def input_transform(t):
+             return tf.concat(

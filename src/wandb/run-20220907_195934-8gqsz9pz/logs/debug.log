@@ -1,0 +1,136 @@
+2022-09-07 19:59:34,476 INFO    Thread-8  :3028 [wandb_setup.py:_flush():76] Configure stats pid to 3028
+2022-09-07 19:59:34,476 INFO    Thread-8  :3028 [wandb_setup.py:_flush():76] Loading settings from C:\Users\raiha\.config\wandb\settings
+2022-09-07 19:59:34,476 INFO    Thread-8  :3028 [wandb_setup.py:_flush():76] Loading settings from wandb\settings
+2022-09-07 19:59:34,476 INFO    Thread-8  :3028 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'_require_service': 'True', 'entity': 'raihaan123', 'project': 'PINNs', 'root_dir': 'C:\\GitHub\\UROP-Notes\\src', 'sweep_id': 'vedrny1e', 'run_id': '8gqsz9pz', 'sweep_param_path': 'C:\\GitHub\\UROP-Notes\\src\\wandb\\sweep-vedrny1e\\config-8gqsz9pz.yaml'}
+2022-09-07 19:59:34,477 INFO    Thread-8  :3028 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'src\\runner.py', 'program': 'c:/GitHub/UROP-Notes/src/runner.py'}
+2022-09-07 19:59:34,477 INFO    Thread-8  :3028 [wandb_init.py:_log_setup():461] Logging user logs to C:\GitHub\UROP-Notes\src\wandb\run-20220907_195934-8gqsz9pz\logs\debug.log
+2022-09-07 19:59:34,477 INFO    Thread-8  :3028 [wandb_init.py:_log_setup():462] Logging internal logs to C:\GitHub\UROP-Notes\src\wandb\run-20220907_195934-8gqsz9pz\logs\debug-internal.log
+2022-09-07 19:59:34,477 INFO    Thread-8  :3028 [wandb_init.py:init():495] calling init triggers
+2022-09-07 19:59:34,477 INFO    Thread-8  :3028 [wandb_init.py:init():499] wandb.init called with sweep_config: {'depth': 22, 'height': 7, 'num_domain': 1600}
+config: {}
+2022-09-07 19:59:34,478 INFO    Thread-8  :3028 [wandb_init.py:init():548] starting backend
+2022-09-07 19:59:34,478 INFO    Thread-8  :3028 [wandb_init.py:init():552] setting up manager
+2022-09-07 19:59:34,495 INFO    Thread-8  :3028 [backend.py:_multiprocessing_setup():99] multiprocessing start_methods=spawn, using: spawn
+2022-09-07 19:59:34,509 INFO    Thread-8  :3028 [wandb_init.py:init():558] backend started and connected
+2022-09-07 19:59:34,521 INFO    Thread-8  :3028 [wandb_run.py:_config_callback():1152] config_cb None None {'depth': 22, 'height': 7, 'num_domain': 1600}
+2022-09-07 19:59:34,522 INFO    Thread-8  :3028 [wandb_init.py:init():636] updated telemetry
+2022-09-07 19:59:34,693 INFO    Thread-8  :3028 [wandb_init.py:init():668] communicating run to backend with 30 second timeout
+2022-09-07 19:59:35,074 INFO    Thread-8  :3028 [wandb_run.py:_on_init():1982] communicating current version
+2022-09-07 19:59:35,154 INFO    Thread-8  :3028 [wandb_run.py:_on_init():1986] got version response 
+2022-09-07 19:59:35,154 INFO    Thread-8  :3028 [wandb_init.py:init():700] starting run threads in backend
+2022-09-07 19:59:35,925 INFO    Thread-8  :3028 [wandb_run.py:_console_start():1962] atexit reg
+2022-09-07 19:59:35,925 INFO    Thread-8  :3028 [wandb_run.py:_redirect():1820] redirect: SettingsConsole.WRAP_RAW
+2022-09-07 19:59:35,926 INFO    Thread-8  :3028 [wandb_run.py:_redirect():1885] Wrapping output streams.
+2022-09-07 19:59:35,926 INFO    Thread-8  :3028 [wandb_run.py:_redirect():1907] Redirects installed.
+2022-09-07 19:59:35,927 INFO    Thread-8  :3028 [wandb_init.py:init():732] run started, returning control to user process
+2022-09-07 19:59:47,795 INFO    Thread-8  :3028 [wandb_run.py:_finish():1728] finishing run raihaan123/PINNs/8gqsz9pz
+2022-09-07 19:59:47,796 INFO    Thread-8  :3028 [wandb_run.py:_atexit_cleanup():1931] got exitcode: 0
+2022-09-07 19:59:47,796 INFO    Thread-8  :3028 [wandb_run.py:_restore():1914] restore
+2022-09-07 19:59:47,796 INFO    Thread-8  :3028 [wandb_run.py:_restore():1920] restore done
+2022-09-07 19:59:47,809 INFO    Thread-8  :3028 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 2
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 19403
+  total_bytes: 19403
+}
+
+2022-09-07 19:59:48,075 INFO    Thread-8  :3028 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 2
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 19403
+  total_bytes: 19403
+}
+
+2022-09-07 19:59:50,223 INFO    Thread-8  :3028 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 2
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 19403
+  total_bytes: 19403
+}
+
+2022-09-07 19:59:50,328 INFO    Thread-8  :3028 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 19403
+  total_bytes: 25413
+}
+
+2022-09-07 19:59:50,442 INFO    Thread-8  :3028 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 19403
+  total_bytes: 25413
+}
+
+2022-09-07 19:59:50,545 INFO    Thread-8  :3028 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 25413
+  total_bytes: 25413
+}
+
+2022-09-07 19:59:50,661 INFO    Thread-8  :3028 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 25413
+  total_bytes: 25413
+}
+
+2022-09-07 19:59:50,792 INFO    Thread-8  :3028 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 25413
+  total_bytes: 25413
+}
+
+2022-09-07 19:59:50,903 INFO    Thread-8  :3028 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 25413
+  total_bytes: 25413
+}
+
+2022-09-07 19:59:51,154 INFO    Thread-8  :3028 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 25413
+  total_bytes: 25413
+}
+
+2022-09-07 19:59:51,865 INFO    Thread-8  :3028 [wandb_run.py:_on_finish():2221] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 25413
+  total_bytes: 25413
+}
+local_info {
+}
+
+2022-09-07 19:59:53,013 INFO    Thread-8  :3028 [wandb_run.py:_footer_history_summary_info():3305] rendering history
+2022-09-07 19:59:53,014 INFO    Thread-8  :3028 [wandb_run.py:_footer_history_summary_info():3337] rendering summary
+2022-09-07 19:59:53,034 INFO    Thread-8  :3028 [wandb_run.py:_footer_sync_info():3261] logging synced files

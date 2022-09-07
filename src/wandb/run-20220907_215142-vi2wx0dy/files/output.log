@@ -1,0 +1,23 @@
+Compiling model...
+Building feed-forward neural network...
+'build' took 0.774463 s
+WARNING:tensorflow:From C:\Users\raiha\Anaconda3\envs\PyTorch Learning\lib\site-packages\deepxde\nn\tensorflow_compat_v1\fnn.py:110: dense (from tensorflow.python.keras.legacy_tf_layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+WARNING:tensorflow:From C:\Users\raiha\Anaconda3\envs\PyTorch Learning\lib\site-packages\tensorflow\python\keras\legacy_tf_layers\core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer_v1) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+WARNING:tensorflow:From C:\Users\raiha\Anaconda3\envs\PyTorch Learning\lib\site-packages\deepxde\nn\tensorflow_compat_v1\fnn.py:86: dropout (from tensorflow.python.keras.legacy_tf_layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dropout instead.
+'compile' took 7.149549 s
+Initializing variables...
+Training model...
+Step      Train loss                        Test loss                         Test metric
+0         [8.21e-02, 1.10e+00, 1.27e-03]    [3.60e-03, 7.51e-01, 1.46e-08]    []
+18        [2.94e-01, 1.44e-03, 1.36e-02]    [4.07e-02, 3.36e-01, 2.44e-03]    []
+Best model at step 18:
+  train loss: 3.09e-01
+  test loss: 3.79e-01
+  test metric: []
+'train' took 15.724839 s

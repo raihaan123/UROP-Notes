@@ -1,0 +1,12 @@
+Compiling model...
+Building feed-forward neural network...
+'build' took 0.325962 s
+WARNING:tensorflow:From C:\Users\raiha\Anaconda3\envs\PyTorch Learning\lib\site-packages\deepxde\nn\tensorflow_compat_v1\fnn.py:110: dense (from tensorflow.python.keras.legacy_tf_layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+WARNING:tensorflow:From C:\Users\raiha\Anaconda3\envs\PyTorch Learning\lib\site-packages\tensorflow\python\keras\legacy_tf_layers\core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer_v1) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+WARNING:tensorflow:From C:\Users\raiha\Anaconda3\envs\PyTorch Learning\lib\site-packages\deepxde\nn\tensorflow_compat_v1\fnn.py:86: dropout (from tensorflow.python.keras.legacy_tf_layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dropout instead.

@@ -1,0 +1,14 @@
+Compiling model...
+Building feed-forward neural network...
+'build' took 0.577451 s
+'compile' took 5.080158 s
+Initializing variables...
+Training model...
+Step      Train loss                        Test loss                         Test metric
+0         [1.39e-01, 4.12e-01, 1.02e-03]    [3.09e-02, 6.37e-01, 1.35e-03]    []
+18        [2.12e-01, 1.99e-02, 4.79e-03]    [9.77e-02, 2.06e-01, 2.27e-04]    []
+Best model at step 18:
+  train loss: 2.36e-01
+  test loss: 3.04e-01
+  test metric: []
+'train' took 26.370874 s

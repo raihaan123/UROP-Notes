@@ -1,0 +1,22 @@
+{
+    "os": "Windows-10-10.0.22000-SP0",
+    "python": "3.7.6",
+    "heartbeatAt": "2022-09-07T21:06:43.565462",
+    "startedAt": "2022-09-07T21:06:41.380651",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "c:/GitHub/UROP-Notes/src/runner.py",
+    "codePath": "src\\runner.py",
+    "git": {
+        "remote": "git@github.com:raihaan123/UROP-Notes.git",
+        "commit": "513c43b6573b9d319f2f9c8ce6df26e46a8f636f"
+    },
+    "email": "raihaan.usman@gmail.com",
+    "root": "C:/GitHub/UROP-Notes",
+    "host": "RAIHAAN",
+    "username": "Raihaan",
+    "executable": "C:\\Users\\raiha\\Anaconda3\\envs\\PyTorch Learning\\python.exe"
+}

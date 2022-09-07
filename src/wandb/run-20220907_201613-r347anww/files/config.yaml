@@ -1,0 +1,41 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.2
+    code_path: code/src/runner.py
+    framework: tensorflow
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.7.6
+    start_time: 1662578173.662972
+    t:
+      1:
+      - 3
+      - 5
+      - 53
+      - 55
+      2:
+      - 3
+      - 5
+      - 53
+      - 55
+      3:
+      - 2
+      - 23
+      - 37
+      4: 3.7.6
+      5: 0.13.2
+      8:
+      - 3
+      - 5
+depth:
+  desc: null
+  value: 5
+height:
+  desc: null
+  value: 68
+num_domain:
+  desc: null
+  value: 2100

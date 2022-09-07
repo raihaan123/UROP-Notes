@@ -4,24 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "85de84098c16a0bd",
+        "id": "a6dcb478ad1f6a6c",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "UROP-Notes/Week Summaries/Week 3.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "f3b1d3f0f772cd93",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "UROP-Notes/Theory/Van der Pol Oscillator.md",
+            "file": "UROP-Notes/Week Summaries/Week 5.md",
             "mode": "preview",
             "source": false
           }
@@ -65,16 +53,35 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "f6bde7430f8ca632",
     "type": "split",
     "children": [
       {
+        "id": "27b0fada172839c7",
+        "type": "tabs",
+        "dimension": 68.52331606217616,
+        "children": [
+          {
+            "id": "85de84098c16a0bd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "UROP-Notes/Launchpad.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
         "id": "8d3001ce2035095c",
         "type": "tabs",
+        "dimension": 31.476683937823836,
         "children": [
           {
             "id": "f8e96f5f41134dfc",
@@ -82,7 +89,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "UROP-Notes/Week Summaries/Week 3.md",
+                "file": "UROP-Notes/Week Summaries/Week 5.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -105,7 +112,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.7798887840302817,
+                  "scale": 0.4788882052545201,
                   "close": true
                 }
               }
@@ -117,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "UROP-Notes/Week Summaries/Week 3.md",
+                "file": "UROP-Notes/Week Summaries/Week 5.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,20 +139,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
-  "active": "85de84098c16a0bd",
+  "active": "a6dcb478ad1f6a6c",
   "lastOpenFiles": [
-    "UROP-Notes/Theory/Van der Pol Oscillator.md",
+    "UROP-Notes/Week Summaries/Week 5.md",
+    "UROP-Notes/Week Summaries/Week 4.md",
     "UROP-Notes/Week Summaries/Week 3.md",
     "UROP-Notes/Week Summaries/Week 2.md",
     "UROP-Notes/Week Summaries/Week 1.md",
-    "UROP-Notes/Research Objectives.md",
     "UROP-Notes/Launchpad.md",
+    "UROP-Notes/Theory/Van der Pol Oscillator.md",
+    "UROP-Notes/Research Objectives.md",
     "UROP-Notes/Theory/PINNs.md",
-    "IPython Notebooks/Figures/phase-portrait.png",
-    "IPython Notebooks/numerical_solution.ipynb",
-    "phase.md"
+    "IPython Notebooks/Figures/phase-portrait.png"
   ]
 }
